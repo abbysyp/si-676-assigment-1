@@ -1,0 +1,45 @@
+attribute	value
+access_advisory	Restricted access; material extremely fragile; please use online digital image.
+call_number	FP 2 - JPD, no. 136 (A size) [P&P]
+contributors	['Suzuki, Harunobu, 1725?-1770, artist.']
+control_number	2009615132
+created	2016-04-20 16:38:11
+created_published	1765.
+created_published_date	1765.
+creators	[{'link': '//www.loc.gov/pictures/related/?fi=name&q=Suzuki%2C%20Harunobu%2C%201725%3F-1770&co=jpd', 'role': 'artist', 'title': 'Suzuki, Harunobu, 1725?-1770'}]
+date	1765.
+digital_id	['jpd 00139 //hdl.loc.gov/loc.pnp/jpd.00139']
+display_offsite	True
+format	['still image']
+formats	[{'link': '//www.loc.gov/pictures/related/?fi=format&q=Ukiyo-e--Japanese--1760-1770.&co=jpd', 'title': 'Ukiyo-e--Japanese--1760-1770.'}, {'link': '//www.loc.gov/pictures/related/?fi=format&q=Woodcuts--Japanese--Color--1760-1770.&co=jpd', 'title': 'Woodcuts--Japanese--Color--1760-1770.'}]
+genre	['Ukiyo-e--Japanese--1760-1770', 'Woodcuts--Japanese--Color--1760-1770']
+id	2009615132
+language	['jpn']
+link	//www.loc.gov/pictures/item/2009615132/
+location	['Japan']
+marc	//www.loc.gov/pictures/item/2009615132/marc/
+medium	['1 print : woodcut, color ; 27.7 x 19.1 cm.']
+medium_brief	1 print :
+mediums	['1 print : woodcut, color ; 27.7 x 19.1 cm.']
+modified	2016-04-20 16:38:11
+notes	['Title and other descriptive information compiled by Nichibunken-sponsored Edo print specialists in 2005-2006.', 'Format: vertical Chuban Nishikie.', 'Egoyomi. Early work.', 'Forms part of: Japanese prints and drawings (Library of Congress).']
+number_former_id	['https://www.loc.gov/item/2009615132', 'https://www.loc.gov/item/jpd2005000136']
+other_title	['Catching crickets.']
+place	[{'latitude': '', 'link': '//www.loc.gov/pictures/related/?fi=place&q=Japan&co=jpd', 'longitude': '', 'title': 'Japan'}]
+repository	Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print
+reproduction_number	LC-DIG-jpd-00139 (digital file from original print)
+resource_links	['//hdl.loc.gov/loc.pnp/jpd.00139']
+restriction	Restricted access; material extremely fragile; please use online digital image.
+rights_advisory	No known restrictions on publication.
+rights_information	No known restrictions on publication.
+service_low	https://tile.loc.gov/storage-services/service/pnp/jpd/00100/00139_150px.jpg
+service_medium	https://tile.loc.gov/storage-services/service/pnp/jpd/00100/00139r.jpg
+sort_date	1765
+source_created	2005-02-03 00:00:00
+source_modified	2009-05-26 14:07:18
+subject_headings	['Women--Domestic life--Japan--1760-1770.', 'Children--Japan--1760-1770.', 'Recreation--Japan--1760-1770.', 'Crickets--Japan--1760-1770.', 'Japan']
+subjects	['Women--Domestic life--Japan--1760-1770', 'Children--Japan--1760-1770', 'Recreation--Japan--1760-1770', 'Crickets--Japan--1760-1770']
+summary	Print shows a woman and a child catching crickets.
+thumb_gallery	https://tile.loc.gov/storage-services/service/pnp/jpd/00100/00139_150px.jpg
+title	Semitori
+translated_title	['Catching crickets.']

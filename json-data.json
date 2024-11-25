@@ -7,295 +7,176 @@
       "Free to Use and Reuse Sets": "https://www.loc.gov/free-to-use/"
     },
     {
-      "Free to Use and Reuse: Dragons": "https://www.loc.gov/free-to-use/dragons/"
+      "Free to Use and Reuse: Japanese Fine Prints": "https://www.loc.gov/free-to-use/japanese-prints/"
     }
   ],
   "content": {
     "active": true,
     "description": [
-      "<p><strong>Here there be Dragons!</strong> You'll find friendly as well as threatening dragons\u2014some with wings and some as serpents. The dragons appear as heroes or villains in book illustrations; mythical figures in dramatic carved shapes; and symbols in posters and cartoons. The original items date from more than 2,000 years ago to recent times. Unless otherwise noted, the selected images are from the Prints & Photographs Division.</p>\n<p>Browse more\u00a0<a href=\"/free-to-use/\">content that is free to use and reuse</a>. </p>\n"
+      "<p>This set features woodblock prints and drawings by Japanese\nartists of the 17th through early 20th centuries.</p>\n<p>View <a href='/collections/japanese-fine-prints-pre-1915/about-this-collection/'>more Japanese fine prints</a>.</p>\n<p>Browse <a href='/free-to-use/'>more content\nthat is free to use and reuse</a>.</p>\n"
     ],
     "disable_navigation": true,
     "image_url": [
-      "/static/portals/free-to-use/public-domain/dragons/dragons-1.jpg"
+      "/static/portals/free-to-use/public-domain/japanese-prints/01578v.jpg"
     ],
-    "link": "https://www.loc.gov/free-to-use/dragons/",
+    "link": "https://www.loc.gov/free-to-use/japanese-prints/",
     "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
-    "meta_description": "Here there be Dragons! You'll find friendly as well as threatening dragons\u2014some with wings and some as serpents. The dragons appear as heroes or villains in book illustrations; mythical figures in dramatic carved shapes; and symbols in posters and cartoons. The original items date from more than 2,000 years ago to recent times. Unless otherwise noted, the selected images are from the Prints & Photographs Division.",
-    "pagination": "22 of 94",
+    "meta_description": "This set features woodblock prints and drawings by Japanese artists of the 17th through early 20th centuries.",
+    "pagination": "74 of 94",
     "partof": [],
     "set": {
       "items": [
         {
-          "alt": "A siege tower in the shape of a dragon has a basket on its head, a cannon protruding from its mouth, a ladder behind its raised wing leading into its head, and a platform emerging from its chest.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-1.jpg",
-          "link": "/resource/rbc0001.2011rosen0007/?sp=269",
-          "title": "De re militari. Italy, around 1460 (Rare Book & Special Collections Division)"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01578v.jpg",
+          "link": "/resource/jpd.01578/",
+          "title": "Senju great bridge. Hiroshige And\u014d, 1856"
         },
         {
-          "alt": "A cartoonish dragon statue perched on a rooftop leans over the building\u2019s side.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-2.jpg",
-          "link": "/resource/highsm.52549/",
-          "title": "Nori, a benevolent dragon at the Providence Children's Museum in  Rhode Island. Photo by Carol Highsmith, 2018"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00154v.jpg",
+          "link": "/resource/jpd.00154/",
+          "title": "Cherry blossom viewing month. Kiyonaga Torii, 1785-1789"
         },
         {
-          "alt": "A yellow, Chinese-style dragon circles and faces the viewer with an open mouth in the middle of the cover.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-3.jpg",
-          "link": "/resource/musihas.200215965.0",
-          "title": "Dragon's Wishbone. Federal Theatre program cover, 1939 (Music Division)"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/02457v.jpg",
+          "link": "/resource/jpd.02457/",
+          "title": "Teahouse at Koishikawa the morning after a snowfall"
         },
         {
-          "alt": "Print illustration of a dragon emerging from a cloud of smoke.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-4.jpg",
-          "link": "/resource/jpd.01469/",
-          "title": "Dragon materializing out of a cloud of smoke. Japanese woodcut by Tsurana Morizumi, 1870-1920"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/3g10434v.jpg",
+          "link": "/resource/cph.3g10434/",
+          "title": "Second national industrial exhibition at Ueno Park. Hiroshige"
         },
         {
-          "alt": "A red dragon wearing glasses sits reading a book that it holds in front of its face with its tail.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-5.jpg",
-          "link": "/resource/ppmsca.42001/",
-          "title": "Poster advertisement for The Bookman magazine. 1896"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/02608v.jpg",
+          "link": "/resource/jpd.02608/",
+          "title": "A modern version of the Tale of Genji in snow scenes. Toyokuni Utagawa, artist, 1853"
         },
         {
-          "alt": "A statue of a dragon's head embellishes putting greens at a miniature golf course.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-6.jpg",
-          "link": "/resource/highsm.37303/",
-          "title": "A friendly blow-up dragon at a town fair in Pontotoc, Mississippi. Photo by Carol Highsmith, 2016"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/3g10372v.jpg",
+          "link": "/resource/cph.3g10372/",
+          "title": "Village scene in Japan showing people engaged in various activities"
         },
         {
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-7.jpg",
-          "link": "/resource/cph.3b16717/",
-          "title": "Siegfried bathes in the dragon's blood. Film still for the motion picture Die Nibelungen: Siegfried, 1924\n"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/3g10521v.jpg",
+          "link": "/resource/cph.3g10521/",
+          "title": "American family out for a stroll"
         },
         {
-          "alt": "A gold bracelet adorned with gemstones and a decorative dragon with three heads.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-8.jpg",
-          "link": "/resource/ppmsca.30768/",
-          "title": "Dragon-headed bracelet with jewels, Sikkim. Photo by Alice S. Kandell, 1968"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/3g08479v.jpg",
+          "link": "/resource/cph.3g08479/",
+          "title": "Visitors from several nations enjoying a party in the Fan Room of the Gankir\u014d"
         },
         {
-          "alt": "A woman dressed as a knight, holding a shield and sword, stands with one foot on the back of another person dressed as a dragon and lying on the ground.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-9.jpg",
-          "link": "/resource/ggbain.16338/",
-          "title": "Constance Hall in St. Geo. and Dragon, Bryn Mawr. Photo by Bain News Service, 1910-1915"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/3g10539v.jpg",
+          "link": "/resource/cph.3g10539/",
+          "title": "American steamship with group of passengers"
         },
         {
-          "alt": "A smiling dragon statue undulates atop a sign advertising a golf course.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-10.jpg",
-          "link": "/resource/mrg.02997/",
-          "title": "Golden Dragon Golf, North Myrtle Beach, South Carolina. Photo by John Margolies,1985"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00046v.jpg",
+          "link": "/resource/jpd.00046/",
+          "title": "Viewing a snowy landscape with Mount Fuji in the background"
         },
         {
-          "alt": "Print illustration of St. Michael and other angels battling dragons above a castle.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-11.jpg",
-          "link": "/resource/ppmsca.06618/",
-          "title": "St. Michael fighting the dragon. Woodcut by Albrecht D\u00fcrer, around 1511"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01307v.jpg",
+          "link": "/resource/jpd.01307/",
+          "title": "View of Mount Fuji from Meguro in Tokyo"
         },
         {
-          "alt": "Print illustration of a dragon ascending Mt. Fuji after creating rough waters for a group of boats.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-12.jpg",
-          "link": "/resource/jpd.01939/",
-          "title": "Fuji morigoe no ry\u016b. Japanese woodcut, 1890-1920"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00507v.jpg",
+          "link": "/resource/jpd.00507/",
+          "title": "Grove of blossoming cherry trees"
         },
         {
-          "alt": "A painted dragon statue holds a mailbox between its claws.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-13.jpg",
-          "link": "/resource/highsm.47472/",
-          "title": "An elaborate, dragon-themed mailbox outside a home in East Haven, Vermont. Photo by Carol Highsmith, 2017"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01317v.jpg",
+          "link": "/resource/jpd.01317/",
+          "title": "View of Mount Fuji with a pine grove on a promontory in the Suruga Bay"
         },
         {
-          "alt": "An ornamental iron dragon grips a fence rail in its mouth.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-14.jpg",
-          "link": "/resource/hhh.il0330.photos",
-          "title": "Cast iron fence railing, 1000 North Dearborn Street, Chicago, Cook County, Illinois. Photo by Joseph Hill, 1936"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01581v.jpg",
+          "link": "/resource/jpd.01581/",
+          "title": "Two women at an outdoor teahouse stall at Z\u014dshigaya with Mount Fuji in the distance"
         },
         {
-          "alt": "The head and claws of a dragon emerge from the upper right corner, its jaws open and colored red. The dragon appears to be roaring at a small rabbit in the lower left corner, with only its ears and tail visible.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-15.jpg",
-          "link": "/resource/ppmsca.43436/",
-          "title": "The Dragon of Wantley: His Tale. Book cover by John Stewardson, 1890-99"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00181v.jpg",
+          "link": "/resource/jpd.00181/",
+          "title": "Bird's-eye view of Kanbara"
         },
         {
-          "alt": "An illuminated bulb crowns a decorative dragon light fixture.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-16.jpg",
-          "link": "/resource/hhh.ca1567.photos/?sp=80&st=image",
-          "title": "Dragon light fixture in the Death Valley Ranch, Main House, Death Valley Junction, California.  Photo by Jack Boucher, 1987-1989"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00139v.jpg",
+          "link": "/resource/jpd.00139/",
+          "title": "Woman and a child catching crickets"
         },
         {
-          "alt": "A statue of a cartoonish green dragon with several white horns, its red tongue lolling from its mouth, straddles a miniature golf putting green.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-17.jpg",
-          "link": "/resource/mrg.03489/",
-          "title": "Dragon, Magic Carpet Golf, Key West, Florida. Photo by John Margolies,1985"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01271v.jpg",
+          "link": "/resource/jpd.01271/",
+          "title": "Steep landscape rising to a natural bridge of rocks. In the former province called Tanba."
         },
         {
-          "alt": "Illustrated Puck magazine cover of a dragon emerging from clouds near an airship.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-18.jpg",
-          "link": "/resource/ppmsca.26391/",
-          "title": "The air-serpent. Illustration by Frank A. Nankivell for Puck, 1909 July 14"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/02467v.jpg",
+          "link": "/resource/jpd.02467/",
+          "title": "Sunset across the Ry\u014dgoku Bridge over the Sumida River at Onmayagashi"
         },
         {
-          "alt": "Print illustration of a dragon and a bear representing the constellations Draco and Ursa Minor.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-19.jpg",
-          "link": "/resource/cph.3g10050/",
-          "title": "Draco and Ursa minor. Illustration by Sidney Hall in Urania's mirror, 1825"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01822v.jpg",
+          "link": "/resource/jpd.01822/",
+          "title": "Man poling a small boat as the moon rises from behind a grove of trees"
         },
         {
-          "alt": "Poster illustration for the play \u201cThe Evil Eye\u201d of two men frightened by a large sea monster.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-20.jpg",
-          "link": "/resource/var.1281/",
-          "title": "Chas. H. Yale's fantastic spectacle, The Evil Eye. Theatrical poster by Sidney R. Allen, 1900"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01803v.jpg",
+          "link": "/resource/jpd.01803/",
+          "title": "People working in rice paddies during a rain storm"
         },
         {
-          "alt": "A stained glass window in the design of a crouching dragon.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-21.jpg",
-          "link": "/resource/lambdc.01748/",
-          "title": "Stained glass window with Dragon. Design drawing by J. & R. Lamb Studios, early 1900s"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00790v.jpg",
+          "link": "/resource/jpd.00790/",
+          "title": "Woman, full-length, standing next to a large bush"
         },
         {
-          "alt": "Illustration on an atlas map of a sea monster swimming in the ocean.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-22.jpg",
-          "link": "/resource/g3200m.gct00126/?sp=106&r=0.695,0.089,0.136,0.049,0",
-          "title": "Sea serpents fill the Map of the Sea. By Olaus Magnus, published in Rome in 1572. (Geography & Map Division)"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00278v.jpg",
+          "link": "/resource/jpd.00278/",
+          "title": "Sumo wrestler Arakuma, full-length portrait"
         },
         {
-          "alt": "A man in a sailor's uniform poses beneath a dragon statue.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-23.jpg",
-          "link": "/resource/ggbain.37571/",
-          "title": "Sailor from HURON in Peking. Photo by Bain News Service,1924"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/02925v.jpg",
+          "link": "/resource/jpd.02925/",
+          "title": "Bamboo decorated with paper streamers and cutouts..."
         },
         {
-          "alt": "Stereograph card photographs of a Viking boat's bow decorated with a dragon figurehead.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-24.jpg",
-          "link": "/resource/stereo.1s12515/",
-          "title": "Viking ship, Lincoln Park, Chicago. Stereo photo by Keystone View Co., 1930"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01197v.jpg",
+          "link": "/resource/jpd.01197/",
+          "title": "Branch with leaves and cherry blossoms"
         },
         {
-          "alt": "A circular stone gateway arches over a stone path, with rocks and plants beyond. Two serpentine dragon sculptures rest atop the gateway, balancing a small sphere between them.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-25.jpg",
-          "link": "/resource/highsm.40447/",
-          "title": "The \"Moongate\" at the Riverside International Friendship Gardens, La Crosse, Wisconsin. Photo by Carol Highsmith, 2016"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/02148v.jpg",
+          "link": "/resource/jpd.02148/",
+          "title": "Hanging poems on a cherry tree"
         },
         {
-          "alt": "A knight points his lance at the mouth of a dragon lying on the ground. The article below describes Judge Ben B. Lindsay defending suffragists from false statements.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-26.jpg",
-          "link": "/resource/rbcmil.scrp7005601/?sp=1",
-          "title": "Saint George and the Dragon. Illustration by Martha Bryn in the Votes For Women Broadside. Broadside. Published by the Women's Political Union, 1911 (Rare Book & Special Collections Division)"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01328v.jpg",
+          "link": "/resource/jpd.01328/",
+          "title": "Sightseers viewing cherry blossoms along the banks of the Tama River at Edo"
         },
         {
-          "alt": "A statue of a dragon's head embellishes putting greens at a miniature golf course.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-27.jpg",
-          "link": "/resource/mrg.02497/",
-          "title": "Serpent head, Jockey's Ridge Mini-Golf, Nags Head, North Carolina. Photo by John Margolies,1985"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/00501v.jpg",
+          "link": "/resource/jpd.00501/",
+          "title": "Sightseers walking along pathway viewing cherry blossoms on the bank of the Sumida River"
         },
         {
-          "alt": "A serpentine dragon emerges from dark clouds in the foreground, toward a single snow-capped mountain in the background.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-28.jpg",
-          "link": "/resource/jpd.01559/",
-          "title": "Ry\u016b sh\u014dten. Japanese woodcut by Gekk\u014d Ogata, 1897"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/02015v.jpg",
+          "link": "/resource/jpd.02015/",
+          "title": "Bridge across a canal with flowering cherry trees along the banks"
         },
         {
-          "alt": "A large stone vase, shaped like a flower bud sits on a hexagonal pedestal. A serpentine stone dragon wraps around the far side and rises above the vase with its claws on the edge and its mouth wide. A garden and buildings are in the background.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-29.jpg",
-          "link": "/resource/agc.7a04931/",
-          "title": "Travel views of Japan and Korea. Photo by Arnold Genthe, 1908"
-        },
-        {
-          "alt": "Illustrated product label of a dragon with its tongue out and one foot in the air.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-30.jpg",
-          "link": "/resource/trmk.1t14690/",
-          "title": "Trademark registration by Bell, Conrad & Co. for First Steamer Red Dragon Chop brand Japan Tea. 1887"
-        },
-        {
-          "alt": "Eight men dressed in black, blue, red, and yellow hold up a green and red serpentine dragon with sticks for the dragon dance.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-31.jpg",
-          "link": "/resource/cph.3g10363/",
-          "title": "Tojin ja-odori no zu. Japanese woodcut, 1850-1900"
-        },
-        {
-          "alt": "Nine men pose with a long sea serpent made of driftwood on a rocky beach.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-32.jpg",
-          "link": "/resource/cph.3b12369/",
-          "title": "Sea Serpent #3, Seattle, Washington. Photo of a driftwood sculpture, 1906"
-        },
-        {
-          "alt": "A decorative stone handle in the shape of a dragon.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-33.jpg",
-          "link": "/resource/gmdkislak.1991_164_00_0001/?sp=1",
-          "title": "Stone serpent handle. Sculpture from the Cotzumalhuapa civilization. BCE 200-CE 200 (Geography and Map Division)"
-        },
-        {
-          "alt": "A wall of murals in Havana's Chinatown depicts two dragons.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-34.jpg",
-          "link": "/resource/highsm.06071/",
-          "title": "Murals painted on a building on Dragones Street, in the Chinatown section of Havana, Cuba. Photo by Carol Highsmith, 2010"
-        },
-        {
-          "alt": "Book illustration of a dragon with a curved tail and an outstretched tongue.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-35.jpg",
-          "link": "/resource/rbctos.2017gen04040/?sp=432&st=image",
-          "title": "Draconis Alarifigura ex Pareo. Illustration in Serpentum et draconum histori\u00e6 (Natural History of Serpents and Dragons) by Ulysses Aldrovandi. Bologna (Italy), 1640 (Rare Book & Special Collections Division)\n"
-        },
-        {
-          "alt": "A small statue of a dragon with a shield atop a reproduction City of London boundary marker.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-36.jpg",
-          "link": "/resource/highsm.55218/",
-          "title": "Heraldic dragon monument in Lake Havasu City, Arizona. Photo by Carol Highsmith, 2018"
-        },
-        {
-          "alt": "An alligator-like dragon, wearing a crown, stands at the foot of a bed containing a man surrounded by pillows and covers.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-37.jpg",
-          "link": "/resource/gdcmassbookdig.chopchingoldendr00rich/?sp=8&st=image",
-          "title": "\"At last the emperor began to dream. He heard the awful voice, the voice of the Golden Dragon. ...\" Frontispiece in the book Chop-Chin and the Golden Dragon, 1899 (General Collections)'\n"
-        },
-        {
-          "alt": "Print illustration of a dragon carrying off a man intently reading a book.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-38.jpg",
-          "link": "/resource/gdcmassbookdig.princedragons00jenk/?sp=56",
-          "title": "Illustration by John R. Neill for the book The Prince and the Dragons, by Tudor Jenks, 1906 (General Collections)\n"
-        },
-        {
-          "alt": "Book illustration of a crouching dragon blowing a plume of smoke from its nostril.",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-39.jpg",
-          "link": "/resource/gdcmassbookdig.dragonjuggernaut00howe/?sp=7",
-          "title": "Frontispiece for the book The Dragon and Juggernaut of Speculation ... by James H. Howe, 1916 (General Collections)\n"
-        },
-        {
-          "alt": "In this political cartoon, a transparent dragon with the words \u201cThird Term\u201d on its side sits on top of two men lying in bed. The men glare at the dragon.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-40.jpg",
-          "link": "/resource/ppmsca.28946/",
-          "title": "Their nightmare. Color illustration by Charles J. Taylor in Puck magazine, 1895\n"
-        },
-        {
-          "alt": "A row of carved and painted dragon heads protrudes from an ornate wall painted primarily red, green, and gold.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-41.jpg",
-          "link": "/resource/ppmsca.30863/",
-          "title": "Dragon head carvings above the Tsuklakhang Main Temple (Palace Temple) door, Gangtok, Sikkim. Photo by Alice S. Kandell, 1965-1979\n"
-        },
-        {
-          "alt": "Newsprint photograph of a man touching a massive papier-m\u00e2ch\u00e9 dragon.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-42.jpg",
-          "link": "https://chroniclingamerica.loc.gov/lccn/sn86076201/1912-11-16/ed-1/seq-3/",
-          "title": "The Chinese Dragon. Illustration in the Eureka Sentinel, Nov. 16, 1912. See: Chronicling America\n"
-        },
-        {
-          "alt": "A dragon marionette rests slumped on a flat surface.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-43.jpg",
-          "link": "https://blogs.loc.gov/music/2012/01/pic-of-the-week-year-of-the-dragon-edition/",
-          "title": "Production still photo from Dragon Snee Zee, a marionette show made for the Federal Theatre Project, around 1935 (Music Division)\n"
-        },
-        {
-          "alt": "Book illustration of a dragon wearing medieval armor and carrying a spear.\n",
-          "image": "/static/portals/free-to-use/public-domain/dragons/dragons-44.jpg",
-          "link": "/resource/cai.2a11576/",
-          "title": "\"They thought I was one of those fire belching dragons.\" Drawing by Daniel B. Carter. Illustration for A Connecticut Yankee in King Arthur's Court by Mark Twain, 1889\n"
+          "image": "/static/portals/free-to-use/public-domain/japanese-prints/01361v.jpg",
+          "link": "/resource/jpd.01361/",
+          "title": "Bird's-eye view of the Hasedera temple in the Yamato Province"
         }
       ],
       "layout": "unaligned"
     },
-    "slug": "dragons",
-    "status": "production",
-    "title": "Free to Use and Reuse: Dragons",
-    "url": "https://www.loc.gov/free-to-use/dragons/"
+    "slug": "japanese-prints",
+    "title": "Free to Use and Reuse: Japanese Fine Prints",
+    "url": "https://www.loc.gov/free-to-use/japanese-prints/"
   },
   "content_is_post": false,
   "description": "Free to Use and Reuse Archive",
@@ -306,373 +187,327 @@
     "active": false,
     "content": "theme.html",
     "description": [
-      "<p>How do you like to celebrate  your own birthday or the anniversary of an organization? You can find inspiration here. Cakes and candles turn up most often. You'll also find gift ideas, festive parties, music, and fireworks. Unless otherwise noted, the selected images are from the Prints & Photographs Division.</p>\n<p>Browse more\u00a0<a href=\"/free-to-use/\">content that is free to use and reuse</a>. </p>\n"
+      "<p>View photos and illustrations of bicycles and cycling through\nhistory.</p>\n<p>Browse <a href='/free-to-use/'>more content that is free to use\nand reuse</a>.</p>\n"
     ],
     "disable_navigation": true,
     "image_url": [
-      "/static/portals/free-to-use/public-domain/birthdays/birthdays-1.jpg"
+      "/static/portals/free-to-use/public-domain/bicycles/03-3d01840v.jpg"
     ],
-    "link": "https://www.loc.gov/free-to-use/birthdays/",
+    "link": "https://www.loc.gov/free-to-use/bicycles/",
     "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
-    "meta_description": "How do you like to celebrate your own birthday or the anniversary of an organization? You can find inspiration here. Cakes and candles turn up most often. You'll also find gift ideas, festive parties, music, and fireworks. Unless otherwise noted, the selected images are from the Prints & Photographs Division.",
-    "pagination": "23 of 94",
+    "meta_description": "View photos and illustrations of bicycles and cycling through history.",
+    "pagination": "75 of 94",
     "set": {
       "items": [
         {
-          "alt": "Kittens wearing clothing are posed in chairs at a small table with a tiny birthday cake between them.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-1.jpg",
-          "link": "/resource/ds.04028/",
-          "title": "The birthday cake. 1914"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/01-05585v.jpg",
+          "link": "/resource/ppmsca.05585/",
+          "title": "Velocipede hair oil - highly perfumed by T.P. Spencer & Co., New York"
         },
         {
-          "alt": "Print illustration of a lamppost amid a cityscape at night advertises a birthday concert for the NAACP.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-2.jpg",
-          "link": "/resource/ppmsca.24947/",
-          "title": "N.A.A.C.P. birthday ball, Feb. 26th, Golden Gate Ballroom, Count Basie and his Orchestra. 1943"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/02-3b24121r.jpg",
+          "link": "/resource/cph.3b24121/",
+          "title": "Street types of New York City: Messenger boy and bike"
         },
         {
-          "alt": "A young girl carries a three-tiered cake through a room with a large gold statue.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-3.jpg",
-          "link": "/resource/ppmsca.31647/",
-          "title": "Young girl, Kimu, carrying a birthday cake through the Lachung Monastery, Sikkim. 1969"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/03-3d01840v.jpg",
+          "link": "/resource/cph.3d01840/",
+          "title": "Julia Obear, messenger girl at the National Women's [i.e. Woman's] Party headquarters"
         },
         {
-          "alt": "Illustrated sign of an anthropomorphic birthday cake advertises miniature golf birthday parties.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-4.jpg",
-          "link": "/resource/mrg.02550/",
-          "title": "Happy Birthday sign, Putt-Putt, Drayton Plains, Michigan. 1986"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/04-03731v.jpg",
+          "link": "/resource/nclc.03731/",
+          "title": "Group of Western Union Messengers in Norfolk, Va. See also photo 2232, 2258, and report on Va. messengers. Location: Norfolk, Virginia."
         },
         {
-          "alt": "Two women hold a birthday cake encircled by flowers and two small flags.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-5.jpg",
-          "link": "/resource/hec.07052/",
-          "title": "Woman suffrage. Birthday cake. Washington, DC. 1916"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/05-02337v.jpg",
+          "link": "/resource/ppmsca.02337/",
+          "title": "Voyage a la lune"
         },
         {
-          "alt": "A dog sits outside on stairs behind a four-tiered birthday cake.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-6.jpg",
-          "link": "/resource/npcc.06725/",
-          "title": "Laddie boy's birthday cake. 1922"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/06-3b49660r.jpg",
+          "link": "/resource/cph.3b49660/",
+          "title": "Victor bicycles, Overman Wheel Company, Boston, New York"
         },
         {
-          "alt": "Print illustration of a woman seated on a chair holding a gift list beneath the words Why not books.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-7.jpg",
-          "link": "/resource/ppmsca.43480/",
-          "title": "Why not books? for birthdays, weddings, graduations, holidays.1920s"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/07-0525r.jpg",
+          "link": "/resource/var.0525/",
+          "title": "Chas. H. Kabrich, the only bike-chute aeronaut novel and thrilling, bicycle parachute act in mid-air."
         },
         {
-          "alt": "Print illustration of a baby in a gown lying on a chair surrounded by flowers and a bagpipe.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-8.jpg",
-          "link": "/resource/pga.12987/",
-          "title": "Baby\u2019s birthday. 1880"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/08-01798v.jpg",
+          "link": "/resource/pga.01798/",
+          "title": "Golden Gate, sunset in the Yellowstone Park "
         },
         {
-          "alt": "Children in party hats seated at a table look in the direction of the camera.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-9.jpg",
-          "link": "/resource/thc.5a35642/",
-          "title": "Norma Horydczak and friends at her 8th year birthday party. Around 1930"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/09-3b10346r.jpg",
+          "link": "/resource/cph.3b10346/",
+          "title": "Madge Lessing, full length, on bicycle, facing left; holding musical horn to lips"
         },
         {
-          "alt": "A woman pours from a pitcher into glass jars held by a group of children.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-10.jpg",
-          "link": "/resource/fsa.8b14757/",
-          "title": "Washington, D.C. Pouring lemonade at a birthday party on Seaton Road. 1942"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/10-04884v.jpg",
+          "link": "/resource/ppmsc.04884/",
+          "title": "Frances Benjamin Johnston, full-length self-portrait dressed as a man with false moustache, posed with bicycle, facing left"
         },
         {
-          "alt": "Eleanor Roosevelt cuts into a four-tiered cake in front of a group of men in suits.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-11.jpg",
-          "link": "/resource/hec.47379/",
-          "title": "First Lady Eleanor Roosevelt cuts President's birthday cake, Washington, DC. 1938"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/11-3b27502r.jpg",
+          "link": "/resource/cph.3b27502/",
+          "title": "Bearings, for sale here"
         },
         {
-          "alt": "People line up along a table covered with cakes inside Shinsundo Studio. Some blow out candles.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-12.jpg",
-          "link": "/resource/afc1981004.142/?sp=16",
-          "title": "Children's folktale contest and old people's birthday party held at Shinsundo Studio, 3315 N. Clark St., Chicago, Illinois. 1977 (American Folklife Center)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/12-04039v.jpg",
+          "link": "/resource/pga.04039/",
+          "title": "Bicycling / Hy Sandham ; aquarelle print by L. Prang & Co."
         },
         {
-          "alt": "Print illustration of two birds perched on a tree with text that reads A Little Bird\u2019s Song on my Birthday.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-13.jpg",
-          "link": "/resource/gdcmassbookdig.littlebirdssongo00whit/?sp=7",
-          "title": "A Little Bird\u2019s Song on My Birthday. 1887 (General Collections)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/13-default.jpg",
+          "link": "/resource/dcmsiabooks.touristsmanualbo00pope/?sp=154",
+          "title": "Image 154 of Tourists' manual and book of information of value to all bicyclers."
         },
         {
-          "alt": "Tennessee Williams smiles while holding a cake decorated with candles and text.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-14.jpg",
-          "link": "/resource/cph.3c28957/",
-          "title": "Tennessee Williams with \"birthday\" cake for the 20th anniversary of \"The Glass Menagerie\" opening. 1965"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/14-38847v.jpg",
+          "link": "/resource/ppmsca.38847/",
+          "title": "Man and boy riding a bike with a dog perched on the man's shoulder near the U.S. Capitol Reflecting Pool"
         },
         {
-          "alt": "A center label from a Victor Records recording of Feliz cumpleanos.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-15.jpg",
-          "link": "/item/jukebox-12180/",
-          "title": "Feliz cumpleanos. 1915 (Sound recording in the National Jukebox)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/15-3g10501v.jpg",
+          "link": "/resource/cph.3g10501/",
+          "title": "The Adam Forepaugh and Sells Brothers, America's greatest shows consolidated--The miraculous Melrosas"
         },
         {
-          "alt": "Drawing of people in a forest gathering items from the ground into sacks.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-16.jpg",
-          "link": "/resource/cai.2a14298/",
-          "title": "The birthday party in the woods. 1898"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/16-28768v.jpg",
+          "link": "/resource/ppmsca.28768/",
+          "title": "Puck's greeting to the new year / Ehrhart."
         },
         {
-          "alt": "Graphite drawing of people gathered in a room preparing to drink tea.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-17.jpg",
-          "link": "/resource/cph.3b44662/",
-          "title": "Birthday party with women preparing tea at left, a group of women on raised platform at center, and children with elders under the Chinese character representing longevity on the right. 1800s"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/17-8c34879v.jpg",
+          "link": "/resource/fsa.8c34879/",
+          "title": "Sunday cyclists in East Potomac Park, Washington, D.C. "
         },
         {
-          "alt": "A young man sits in a barber chair after getting his hair cut. A barber stands behind him.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-18.jpg",
-          "link": "/resource/afc1995028.afc1995028_mcc07120/",
-          "title": "Louis McDowell cuts Michael Young's hair; the haircut is called a \"high-top fade\"; today is Young's 14th birthday. 1994 (American Folklife Center)\n"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/18-50511v.jpg",
+          "link": "/resource/ppmsca.50511/",
+          "title": "Bike story [Bicycle rental store, District Hardware]"
         },
         {
-          "alt": "A young girl cuts into a pie on a table cluttered with dishes.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-19.jpg",
-          "link": "/resource/fsa.8b25186/",
-          "title": "Josie Caudill cutting pie at neighbor's house where several families are visiting to celebrate a birthday. Pie Town, New Mexico. 1940"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/19-97683587.jpg",
+          "link": "/resource/g4361p.ct000092/",
+          "title": "Map of California roads for cyclers."
         },
         {
-          "alt": "A group of people sits at a table covered with assorted foods.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-20.jpg",
-          "link": "/resource/fsa.8d21061/",
-          "title": "Greenbelt, Maryland. Party for Mrs. Taylor's eighty third birthday, attended by her children and grandchildren, on the grounds of the home of her son-in-law, Dr. McCarl. 1942"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/20-01561v.jpg",
+          "link": "/resource/npcc.01561/",
+          "title": "Tony Pizzo "
         },
         {
-          "alt": "Fireworks light up the sky above a group of buildings.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-21.jpg",
-          "link": "/resource/matpc.16564/",
-          "title": "Night fireworks for Prophet's (Mohamed) birthday, May 22nd, 1937"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/21-37151v.jpg",
+          "link": "/resource/highsm.37151/",
+          "title": "Downtown biker on a day when heavy snow covers the main street of Telluride, Colorado"
         },
         {
-          "alt": "Print illustration of a couple dancing while two young people\u2014one with a crutch\u2014look on.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-22.jpg",
-          "link": "/resource/cph.3f05341/",
-          "title": "\"The President's birthday ball \"So we may dance again\" Fight infantile paralysis. 1936-1939\"\n"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/22-21954v.jpg",
+          "link": "/resource/highsm.21954/",
+          "title": "Bicycle rental in Venice, a beachfront district on the Westside of Los Angeles, California"
         },
         {
-          "alt": "People surround a dining table set with dishes and food and look toward the camera.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-23.jpg",
-          "link": "/resource/ppprs.00535/",
-          "title": "Birthday dinner at J.G. Feight's, attended by the Wright Brothers. 1899"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/24-01531v.jpg",
+          "link": "/resource/ggbain.01531/",
+          "title": "6 Day Bike Race, Madison Sq. Garden"
         },
         {
-          "alt": "Print illustration of three men drinking beer in a cobbler\u2019s workshop.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-24.jpg",
-          "link": "/resource/ppmsca.43909/",
-          "title": "Das liederliche Kleeblatt, oder, lumpaci vagabundi, \"birthday congratulations.\"1894"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/25-14464v.jpg",
+          "link": "/resource/highsm.14464/",
+          "title": "Bike race on Pennsylvania Avenue, Washington, D.C."
         },
         {
-          "alt": "Graphite drawing of couples dancing in a large room under chandeliers and large flags.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-25.jpg",
-          "link": "/resource/ppmsca.20656/",
-          "title": "Ball of 2nd Corps--Washington's birthday during the Civil War. 1864"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/26-04506v.jpg",
+          "link": "/resource/npcc.04506/",
+          "title": "Times boy on bicycle"
         },
         {
-          "alt": "Print illustration of a small bouquet of Lily of the Valley flowers with text that reads Lily Bells Ring a Birthday Chime.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-26.jpg",
-          "link": "/resource/gdcmassbookdig.lilybellsringbir00mcqu/?sp=3",
-          "title": "Lily Bells Ring: A Birthday Chime. 1888 (General Collections)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/27-3a32443r.jpg",
+          "link": "/resource/cph.3a32443",
+          "title": "Diavolo performing his bicycle daredevil act before a large audience"
         },
         {
-          "alt": "Print illustration of Abraham Lincoln promoting his birthday as a federal holiday.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-27.jpg",
-          "link": "/resource/ppmsca.73571/",
-          "title": "Legal holiday Lincoln's birthday February 12th no business transacted. 1890s"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/28-07962v.jpg",
+          "link": "/resource/ds.07962/",
+          "title": "A perilous ride / Platt Brothers, artist and photographer, 1116 12th St., N.W., Washington, D.C."
+        },
+        {
+          "image": "/static/portals/free-to-use/public-domain/bicycles/29-33721v.jpg",
+          "link": "/resource/hec.33721/",
+          "title": "In a bicycle built for two, Washington, D.C. September 8. Dr. Loo S. Rowe greets Victor Scarraffia and Vincente Gregori"
         }
       ],
       "layout": "unaligned"
     },
-    "slug": "birthdays",
-    "status": "production",
-    "title": "Free to Use and Reuse: Birthdays",
-    "url": "https://www.loc.gov/free-to-use/birthdays/"
+    "slug": "bicycles",
+    "title": "Free to Use and Reuse: Bicycles",
+    "url": "https://www.loc.gov/free-to-use/bicycles/"
   },
   "next_sibling": {
     "active": false,
     "content": "theme.html",
     "description": [
-      "<p>How do you like to celebrate  your own birthday or the anniversary of an organization? You can find inspiration here. Cakes and candles turn up most often. You'll also find gift ideas, festive parties, music, and fireworks. Unless otherwise noted, the selected images are from the Prints & Photographs Division.</p>\n<p>Browse more\u00a0<a href=\"/free-to-use/\">content that is free to use and reuse</a>. </p>\n"
+      "<p>View photos and illustrations of bicycles and cycling through\nhistory.</p>\n<p>Browse <a href='/free-to-use/'>more content that is free to use\nand reuse</a>.</p>\n"
     ],
     "disable_navigation": true,
     "image_url": [
-      "/static/portals/free-to-use/public-domain/birthdays/birthdays-1.jpg"
+      "/static/portals/free-to-use/public-domain/bicycles/03-3d01840v.jpg"
     ],
-    "link": "https://www.loc.gov/free-to-use/birthdays/",
+    "link": "https://www.loc.gov/free-to-use/bicycles/",
     "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
-    "meta_description": "How do you like to celebrate your own birthday or the anniversary of an organization? You can find inspiration here. Cakes and candles turn up most often. You'll also find gift ideas, festive parties, music, and fireworks. Unless otherwise noted, the selected images are from the Prints & Photographs Division.",
-    "pagination": "23 of 94",
+    "meta_description": "View photos and illustrations of bicycles and cycling through history.",
+    "pagination": "75 of 94",
     "set": {
       "items": [
         {
-          "alt": "Kittens wearing clothing are posed in chairs at a small table with a tiny birthday cake between them.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-1.jpg",
-          "link": "/resource/ds.04028/",
-          "title": "The birthday cake. 1914"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/01-05585v.jpg",
+          "link": "/resource/ppmsca.05585/",
+          "title": "Velocipede hair oil - highly perfumed by T.P. Spencer & Co., New York"
         },
         {
-          "alt": "Print illustration of a lamppost amid a cityscape at night advertises a birthday concert for the NAACP.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-2.jpg",
-          "link": "/resource/ppmsca.24947/",
-          "title": "N.A.A.C.P. birthday ball, Feb. 26th, Golden Gate Ballroom, Count Basie and his Orchestra. 1943"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/02-3b24121r.jpg",
+          "link": "/resource/cph.3b24121/",
+          "title": "Street types of New York City: Messenger boy and bike"
         },
         {
-          "alt": "A young girl carries a three-tiered cake through a room with a large gold statue.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-3.jpg",
-          "link": "/resource/ppmsca.31647/",
-          "title": "Young girl, Kimu, carrying a birthday cake through the Lachung Monastery, Sikkim. 1969"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/03-3d01840v.jpg",
+          "link": "/resource/cph.3d01840/",
+          "title": "Julia Obear, messenger girl at the National Women's [i.e. Woman's] Party headquarters"
         },
         {
-          "alt": "Illustrated sign of an anthropomorphic birthday cake advertises miniature golf birthday parties.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-4.jpg",
-          "link": "/resource/mrg.02550/",
-          "title": "Happy Birthday sign, Putt-Putt, Drayton Plains, Michigan. 1986"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/04-03731v.jpg",
+          "link": "/resource/nclc.03731/",
+          "title": "Group of Western Union Messengers in Norfolk, Va. See also photo 2232, 2258, and report on Va. messengers. Location: Norfolk, Virginia."
         },
         {
-          "alt": "Two women hold a birthday cake encircled by flowers and two small flags.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-5.jpg",
-          "link": "/resource/hec.07052/",
-          "title": "Woman suffrage. Birthday cake. Washington, DC. 1916"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/05-02337v.jpg",
+          "link": "/resource/ppmsca.02337/",
+          "title": "Voyage a la lune"
         },
         {
-          "alt": "A dog sits outside on stairs behind a four-tiered birthday cake.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-6.jpg",
-          "link": "/resource/npcc.06725/",
-          "title": "Laddie boy's birthday cake. 1922"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/06-3b49660r.jpg",
+          "link": "/resource/cph.3b49660/",
+          "title": "Victor bicycles, Overman Wheel Company, Boston, New York"
         },
         {
-          "alt": "Print illustration of a woman seated on a chair holding a gift list beneath the words Why not books.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-7.jpg",
-          "link": "/resource/ppmsca.43480/",
-          "title": "Why not books? for birthdays, weddings, graduations, holidays.1920s"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/07-0525r.jpg",
+          "link": "/resource/var.0525/",
+          "title": "Chas. H. Kabrich, the only bike-chute aeronaut novel and thrilling, bicycle parachute act in mid-air."
         },
         {
-          "alt": "Print illustration of a baby in a gown lying on a chair surrounded by flowers and a bagpipe.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-8.jpg",
-          "link": "/resource/pga.12987/",
-          "title": "Baby\u2019s birthday. 1880"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/08-01798v.jpg",
+          "link": "/resource/pga.01798/",
+          "title": "Golden Gate, sunset in the Yellowstone Park "
         },
         {
-          "alt": "Children in party hats seated at a table look in the direction of the camera.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-9.jpg",
-          "link": "/resource/thc.5a35642/",
-          "title": "Norma Horydczak and friends at her 8th year birthday party. Around 1930"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/09-3b10346r.jpg",
+          "link": "/resource/cph.3b10346/",
+          "title": "Madge Lessing, full length, on bicycle, facing left; holding musical horn to lips"
         },
         {
-          "alt": "A woman pours from a pitcher into glass jars held by a group of children.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-10.jpg",
-          "link": "/resource/fsa.8b14757/",
-          "title": "Washington, D.C. Pouring lemonade at a birthday party on Seaton Road. 1942"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/10-04884v.jpg",
+          "link": "/resource/ppmsc.04884/",
+          "title": "Frances Benjamin Johnston, full-length self-portrait dressed as a man with false moustache, posed with bicycle, facing left"
         },
         {
-          "alt": "Eleanor Roosevelt cuts into a four-tiered cake in front of a group of men in suits.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-11.jpg",
-          "link": "/resource/hec.47379/",
-          "title": "First Lady Eleanor Roosevelt cuts President's birthday cake, Washington, DC. 1938"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/11-3b27502r.jpg",
+          "link": "/resource/cph.3b27502/",
+          "title": "Bearings, for sale here"
         },
         {
-          "alt": "People line up along a table covered with cakes inside Shinsundo Studio. Some blow out candles.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-12.jpg",
-          "link": "/resource/afc1981004.142/?sp=16",
-          "title": "Children's folktale contest and old people's birthday party held at Shinsundo Studio, 3315 N. Clark St., Chicago, Illinois. 1977 (American Folklife Center)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/12-04039v.jpg",
+          "link": "/resource/pga.04039/",
+          "title": "Bicycling / Hy Sandham ; aquarelle print by L. Prang & Co."
         },
         {
-          "alt": "Print illustration of two birds perched on a tree with text that reads A Little Bird\u2019s Song on my Birthday.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-13.jpg",
-          "link": "/resource/gdcmassbookdig.littlebirdssongo00whit/?sp=7",
-          "title": "A Little Bird\u2019s Song on My Birthday. 1887 (General Collections)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/13-default.jpg",
+          "link": "/resource/dcmsiabooks.touristsmanualbo00pope/?sp=154",
+          "title": "Image 154 of Tourists' manual and book of information of value to all bicyclers."
         },
         {
-          "alt": "Tennessee Williams smiles while holding a cake decorated with candles and text.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-14.jpg",
-          "link": "/resource/cph.3c28957/",
-          "title": "Tennessee Williams with \"birthday\" cake for the 20th anniversary of \"The Glass Menagerie\" opening. 1965"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/14-38847v.jpg",
+          "link": "/resource/ppmsca.38847/",
+          "title": "Man and boy riding a bike with a dog perched on the man's shoulder near the U.S. Capitol Reflecting Pool"
         },
         {
-          "alt": "A center label from a Victor Records recording of Feliz cumpleanos.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-15.jpg",
-          "link": "/item/jukebox-12180/",
-          "title": "Feliz cumpleanos. 1915 (Sound recording in the National Jukebox)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/15-3g10501v.jpg",
+          "link": "/resource/cph.3g10501/",
+          "title": "The Adam Forepaugh and Sells Brothers, America's greatest shows consolidated--The miraculous Melrosas"
         },
         {
-          "alt": "Drawing of people in a forest gathering items from the ground into sacks.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-16.jpg",
-          "link": "/resource/cai.2a14298/",
-          "title": "The birthday party in the woods. 1898"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/16-28768v.jpg",
+          "link": "/resource/ppmsca.28768/",
+          "title": "Puck's greeting to the new year / Ehrhart."
         },
         {
-          "alt": "Graphite drawing of people gathered in a room preparing to drink tea.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-17.jpg",
-          "link": "/resource/cph.3b44662/",
-          "title": "Birthday party with women preparing tea at left, a group of women on raised platform at center, and children with elders under the Chinese character representing longevity on the right. 1800s"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/17-8c34879v.jpg",
+          "link": "/resource/fsa.8c34879/",
+          "title": "Sunday cyclists in East Potomac Park, Washington, D.C. "
         },
         {
-          "alt": "A young man sits in a barber chair after getting his hair cut. A barber stands behind him.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-18.jpg",
-          "link": "/resource/afc1995028.afc1995028_mcc07120/",
-          "title": "Louis McDowell cuts Michael Young's hair; the haircut is called a \"high-top fade\"; today is Young's 14th birthday. 1994 (American Folklife Center)\n"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/18-50511v.jpg",
+          "link": "/resource/ppmsca.50511/",
+          "title": "Bike story [Bicycle rental store, District Hardware]"
         },
         {
-          "alt": "A young girl cuts into a pie on a table cluttered with dishes.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-19.jpg",
-          "link": "/resource/fsa.8b25186/",
-          "title": "Josie Caudill cutting pie at neighbor's house where several families are visiting to celebrate a birthday. Pie Town, New Mexico. 1940"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/19-97683587.jpg",
+          "link": "/resource/g4361p.ct000092/",
+          "title": "Map of California roads for cyclers."
         },
         {
-          "alt": "A group of people sits at a table covered with assorted foods.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-20.jpg",
-          "link": "/resource/fsa.8d21061/",
-          "title": "Greenbelt, Maryland. Party for Mrs. Taylor's eighty third birthday, attended by her children and grandchildren, on the grounds of the home of her son-in-law, Dr. McCarl. 1942"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/20-01561v.jpg",
+          "link": "/resource/npcc.01561/",
+          "title": "Tony Pizzo "
         },
         {
-          "alt": "Fireworks light up the sky above a group of buildings.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-21.jpg",
-          "link": "/resource/matpc.16564/",
-          "title": "Night fireworks for Prophet's (Mohamed) birthday, May 22nd, 1937"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/21-37151v.jpg",
+          "link": "/resource/highsm.37151/",
+          "title": "Downtown biker on a day when heavy snow covers the main street of Telluride, Colorado"
         },
         {
-          "alt": "Print illustration of a couple dancing while two young people\u2014one with a crutch\u2014look on.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-22.jpg",
-          "link": "/resource/cph.3f05341/",
-          "title": "\"The President's birthday ball \"So we may dance again\" Fight infantile paralysis. 1936-1939\"\n"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/22-21954v.jpg",
+          "link": "/resource/highsm.21954/",
+          "title": "Bicycle rental in Venice, a beachfront district on the Westside of Los Angeles, California"
         },
         {
-          "alt": "People surround a dining table set with dishes and food and look toward the camera.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-23.jpg",
-          "link": "/resource/ppprs.00535/",
-          "title": "Birthday dinner at J.G. Feight's, attended by the Wright Brothers. 1899"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/24-01531v.jpg",
+          "link": "/resource/ggbain.01531/",
+          "title": "6 Day Bike Race, Madison Sq. Garden"
         },
         {
-          "alt": "Print illustration of three men drinking beer in a cobbler\u2019s workshop.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-24.jpg",
-          "link": "/resource/ppmsca.43909/",
-          "title": "Das liederliche Kleeblatt, oder, lumpaci vagabundi, \"birthday congratulations.\"1894"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/25-14464v.jpg",
+          "link": "/resource/highsm.14464/",
+          "title": "Bike race on Pennsylvania Avenue, Washington, D.C."
         },
         {
-          "alt": "Graphite drawing of couples dancing in a large room under chandeliers and large flags.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-25.jpg",
-          "link": "/resource/ppmsca.20656/",
-          "title": "Ball of 2nd Corps--Washington's birthday during the Civil War. 1864"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/26-04506v.jpg",
+          "link": "/resource/npcc.04506/",
+          "title": "Times boy on bicycle"
         },
         {
-          "alt": "Print illustration of a small bouquet of Lily of the Valley flowers with text that reads Lily Bells Ring a Birthday Chime.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-26.jpg",
-          "link": "/resource/gdcmassbookdig.lilybellsringbir00mcqu/?sp=3",
-          "title": "Lily Bells Ring: A Birthday Chime. 1888 (General Collections)"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/27-3a32443r.jpg",
+          "link": "/resource/cph.3a32443",
+          "title": "Diavolo performing his bicycle daredevil act before a large audience"
         },
         {
-          "alt": "Print illustration of Abraham Lincoln promoting his birthday as a federal holiday.",
-          "image": "/static/portals/free-to-use/public-domain/birthdays/birthdays-27.jpg",
-          "link": "/resource/ppmsca.73571/",
-          "title": "Legal holiday Lincoln's birthday February 12th no business transacted. 1890s"
+          "image": "/static/portals/free-to-use/public-domain/bicycles/28-07962v.jpg",
+          "link": "/resource/ds.07962/",
+          "title": "A perilous ride / Platt Brothers, artist and photographer, 1116 12th St., N.W., Washington, D.C."
+        },
+        {
+          "image": "/static/portals/free-to-use/public-domain/bicycles/29-33721v.jpg",
+          "link": "/resource/hec.33721/",
+          "title": "In a bicycle built for two, Washington, D.C. September 8. Dr. Loo S. Rowe greets Victor Scarraffia and Vincente Gregori"
         }
       ],
       "layout": "unaligned"
     },
-    "slug": "birthdays",
-    "status": "production",
-    "title": "Free to Use and Reuse: Birthdays",
-    "url": "https://www.loc.gov/free-to-use/birthdays/"
+    "slug": "bicycles",
+    "title": "Free to Use and Reuse: Bicycles",
+    "url": "https://www.loc.gov/free-to-use/bicycles/"
   },
   "options": {
     "access_group": [
@@ -701,7 +536,7 @@
     "display_level": null,
     "distance": null,
     "downloadOption": null,
-    "duration": 0.14127683639526367,
+    "duration": 0.3561992645263672,
     "embed": [],
     "embed!": [],
     "excludeTerms": null,
@@ -730,7 +565,7 @@
     "operator": null,
     "outputEncoding": "UTF-8",
     "page_campaigns": [],
-    "path_info": "/free-to-use/dragons/",
+    "path_info": "/free-to-use/japanese-prints/",
     "port": "443",
     "proxypath": null,
     "query_string": "fo=json",
@@ -745,8 +580,8 @@
         "json"
       ]
     },
-    "request_url": "https://www.loc.gov/free-to-use/dragons/?fo=json",
-    "resource": "dragons/",
+    "request_url": "https://www.loc.gov/free-to-use/japanese-prints/?fo=json",
+    "resource": "japanese-prints/",
     "resource_sequence": null,
     "scheme": "https",
     "searchIn": null,
@@ -762,7 +597,7 @@
     "suggested": null,
     "target": null,
     "template": "managed-content/layouts",
-    "timestamp": 1732403516.963079,
+    "timestamp": 1732548449.2665045,
     "tz_aware": null,
     "unionFacets": "",
     "webcast_permalink": null
@@ -27334,7 +27169,8 @@
           "url": "https://www.loc.gov/free-to-use/nurses-and-nursing/"
         },
         {
-          "active": true,
+          "active": false,
+          "content": "theme.html",
           "description": [
             "<p><strong>Here there be Dragons!</strong> You'll find friendly as well as threatening dragons\u2014some with wings and some as serpents. The dragons appear as heroes or villains in book illustrations; mythical figures in dramatic carved shapes; and symbols in posters and cartoons. The original items date from more than 2,000 years ago to recent times. Unless otherwise noted, the selected images are from the Prints & Photographs Division.</p>\n<p>Browse more\u00a0<a href=\"/free-to-use/\">content that is free to use and reuse</a>. </p>\n"
           ],
@@ -27346,7 +27182,6 @@
           "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
           "meta_description": "Here there be Dragons! You'll find friendly as well as threatening dragons\u2014some with wings and some as serpents. The dragons appear as heroes or villains in book illustrations; mythical figures in dramatic carved shapes; and symbols in posters and cartoons. The original items date from more than 2,000 years ago to recent times. Unless otherwise noted, the selected images are from the Prints & Photographs Division.",
           "pagination": "22 of 94",
-          "partof": [],
           "set": {
             "items": [
               {
@@ -40302,8 +40137,7 @@
           "url": "https://www.loc.gov/free-to-use/baseball-cards/"
         },
         {
-          "active": false,
-          "content": "theme.html",
+          "active": true,
           "description": [
             "<p>This set features woodblock prints and drawings by Japanese\nartists of the 17th through early 20th centuries.</p>\n<p>View <a href='/collections/japanese-fine-prints-pre-1915/about-this-collection/'>more Japanese fine prints</a>.</p>\n<p>Browse <a href='/free-to-use/'>more content\nthat is free to use and reuse</a>.</p>\n"
           ],
@@ -40315,6 +40149,7 @@
           "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
           "meta_description": "This set features woodblock prints and drawings by Japanese artists of the 17th through early 20th centuries.",
           "pagination": "74 of 94",
+          "partof": [],
           "set": {
             "items": [
               {
@@ -43662,544 +43497,340 @@
     "active": false,
     "content": "theme.html",
     "description": [
-      "<p>Women and men have long provided nursing services by caring for the sick and wounded at home and during wars and international relief efforts. The pictures in this set focus on the mid-1800s to mid-1900s, including portraits of such famous figures as Florence Nightingale and Clara Barton as well as women like Susie King Taylor who are gaining recognition for their courageous stories. The emphasis on nurses during the Civil War and in the American Red Cross represents significant nursing concentrations at the Library of Congress. Unless otherwise noted, the selected images are from the Prints & Photographs Division.</p>\n<p>Browse more\u00a0<a href=\"/free-to-use/\">content that is free to use and reuse</a>.</p>\n"
+      "<p>This set features baseball cards from the <a href='/collections/baseball-cards/about-this-collection/'>Benjamin\nK. Edwards Collection</a> which includes 2,100 early baseball cards dating\nfrom 1887 to 1914.</p>\n<p>Browse <a href='/free-to-use/'>more content that is\nfree to use and reuse</a>.</p>\n"
     ],
     "disable_navigation": true,
     "image_url": [
-      "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-1.jpg"
+      "/static/portals/free-to-use/public-domain/baseball-cards/2_1407fv.jpg"
     ],
-    "link": "https://www.loc.gov/free-to-use/nurses-and-nursing/",
+    "link": "https://www.loc.gov/free-to-use/baseball-cards/",
     "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
-    "meta_description": "Women and men have long provided nursing services by caring for the sick and wounded at home and during wars and international relief efforts. The pictures in this set focus on the mid-1800s to mid-1900s, including portraits of such famous figures as Florence Nightingale and Clara Barton as well as women like Susie King Taylor who are gaining recognition for their courageous stories. The emphasis on nurses during the Civil War and in the American Red Cross represents significant nursing concentrations at the Library of Congress. Unless otherwise noted, the selected images are from the Prints & Photographs Division.",
-    "pagination": "21 of 94",
+    "meta_description": "This set features baseball cards from the Benjamin K. Edwards Collection which includes 2,100 early baseball cards dating from 1887 to 1914.",
+    "pagination": "73 of 94",
     "set": {
       "items": [
         {
-          "alt": "Florence Nightingale poses for a photographic portrait.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-1.jpg",
-          "link": "/resource/ppmsca.57163/",
-          "title": "Florence Nightingale (1820-1910) is known as \"the founder of modern nursing.\" Photo by H. Lenthal, around 1856\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/1_0006fv.jpg",
+          "link": "/resource/bbc.0006f/",
+          "title": "John M. Ward, New York Giants, baseball card portrait"
         },
         {
-          "alt": "An aproned woman wraps medical supplies into a cloth bundle.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-2.jpg",
-          "link": "/resource/fsa.8c29209/",
-          "title": "Midwife wrapping her kit to go on a call in Greene County, Georgia. Photo by Jack Delano, 1941"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/2_1407fv.jpg",
+          "link": "/resource/bbc.1407f/",
+          "title": "Christopher Mathewson, New York Giants, baseball card portrait"
         },
         {
-          "alt": "Women in white gowns look after children on a beach.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-3.jpg",
-          "link": "/resource/anrc.01981/",
-          "title": "American Red Cross in Italy. Scores of these little ones are taken in the water daily on the doctor's prescription watched carefully by their nurses. Red Cross Collection photo, 1919\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/3_1407bv.jpg",
+          "link": "/resource/bbc.1407b/",
+          "title": "Christopher Mathewson, New York Giants (back of card)"
         },
         {
-          "alt": "Illustration of a woman with a cross armband riding a horse.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-4.jpg",
-          "link": "/resource/cph.3g07760/",
-          "title": "The Public Health Nurse She answers humanity's call : Your Red Cross membership makes her work possible. Poster by Gordon Grant, 1914-1918\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/4_1993fv.jpg",
+          "link": "/resource/bbc.1993f/",
+          "title": "Clyde Milan/N. Elberfeld, Washington Nationals, baseball card portrait"
         },
         {
-          "alt": "Susie King Taylor stands for a photographic portrait in a U.S. Army nurse uniform.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-5.jpg",
-          "link": "/resource/ppmsca.57593/",
-          "title": "Susie King Taylor (1848-1912), known as the first African American Army nurse"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/5_0068fv.jpg",
+          "link": "/resource/bbc.0068f/",
+          "title": "Ezra Sutton, Boston Beaneaters, baseball card portrait"
         },
         {
-          "alt": "Clara Barton sits for a photographic portrait by a small table and holds an open book.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-6.jpg",
-          "link": "/resource/ppmsca.56384/",
-          "title": "Clara Barton (1812-1921), known for her roles in nursing during the Civil War and in founding the American Red Cross. Photo by Claflin, March 1865"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/6_1558fv.jpg",
+          "link": "/resource/bbc.1558f/",
+          "title": "Zack D. Wheat/William Bergen, Brooklyn Dodgers, baseball card portrait"
         },
         {
-          "alt": "A woman in a nurse uniform tends to a man lying in a bed.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-7.jpg",
-          "link": "/resource/gtfy.07114/",
-          "title": "St. Rose's nuns and nurses with patient. Photo by Bernard Gotfryd, 1984\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/7_0015fv.jpg",
+          "link": "/resource/bbc.0015f/",
+          "title": "Ned Williamson, Chicago White Stockings, baseball card portrait"
         },
         {
-          "alt": "A woman in a nurse uniform wearing a cross symbol armband wraps a dog\u2019s paw with a bandage.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-8.jpg",
-          "link": "/resource/anrc.11105/",
-          "title": "Dogs of War. Red Cross nurse bandaging up a wounded foot of collie. Photo by Underwood & Underwood, 1917"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/8_0072fv.jpg",
+          "link": "/resource/bbc.0072f/",
+          "title": "Harry Lyons and Billy Taylor, Philadelphia Quakers, baseball card portrait"
         },
         {
-          "alt": "Marie Brose Tepe stands for a photographic portrait wearing a uniform embellished with a cross medal.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-9.jpg",
-          "link": "/resource/ppmsca.75531/",
-          "title": "Marie Brose Tepe (1834-1901), Civil War nurse and vivandi\u00e8re in zouave uniform with Kearny Cross medal, barrel canteen, and revolver. Photo by R.W. Addis, 1862-1864"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/9_0188fv.jpg",
+          "link": "/resource/bbc.0188f/",
+          "title": "Ned Hanlon, Detroit Wolverines, baseball card portrait"
         },
         {
-          "alt": "O.W. Waite poses for a photographic portrait wearing a Civil War Union uniform.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-10.jpg",
-          "link": "/resource/ppmsca.69296/",
-          "title": "O.W. Waite, male Civil War nurse at smallpox hospital, in uniform. Photo, 1861-1865"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/10_0552fv.jpg",
+          "link": "/resource/bbc.0552f/",
+          "title": "Charlie Getzien, Detroit Wolverines, baseball card portrait"
         },
         {
-          "alt": "A woman wearing medical scrubs handles surgical instruments in an operating room.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-11.jpg",
-          "link": "/resource/fsa.8a10619/",
-          "title": "Surgical nurse, Herrin Hospital (private), Herrin, Illinois. Photo by Arthur Rothstein, 1939"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/11_2091fv.jpg",
+          "link": "/resource/bbc.2091f/",
+          "title": "Jas. H. Fogarty, Philadelphia Quakers, baseball card portrait"
         },
         {
-          "alt": "A throng of women in nurse uniforms moves along an avenue.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-12.jpg",
-          "link": "/resource/anrc.08094/",
-          "title": "Nurses parade, Chicago. Red Cross Collection photo, 1918"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/13_0555fva.jpg",
+          "link": "/resource/bbc.0555f/",
+          "title": "Cap Anson, Chicago White Stockings, baseball card portrait"
         },
         {
-          "alt": "Illustration of Uncle Sam standing near a woman in nursing attire reading to a man lying in a bed.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-13.jpg",
-          "link": "/resource/ihas.200198982.0/?sp=1",
-          "title": "Remember the Nurse. Sheet music cover, 1918"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/12_0555bva.jpg",
+          "link": "/resource/bbc.0555b/",
+          "title": "Cap Anson, Chicago White Stockings (back of card)"
         },
         {
-          "alt": "Uniformed men lay flowers on graves marked with crosses.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-14.jpg",
-          "link": "/resource/anrc.09598/",
-          "title": "Group of American Red Cross men, Lts. Kelly, Dubois, Fraser and Vance, placing a wreath on Miss Edith Cavell's grave immediately after the departure of the Germans from Brussels. Red Cross Collection photo, around 1918\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/14_0562fv.jpg",
+          "link": "/resource/bbc.0562f/",
+          "title": "Lawton, Haverly Team, baseball card portrait"
         },
         {
-          "alt": "A woman hands a medicine cup to a man across a table.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-15.jpg",
-          "link": "/resource/ds.02776/",
-          "title": "A nurse hands a cup of methadone to a man in a medical clinic at 456 C St., N.W., Washington, D.C. Photo by Warren Leffler, 1971"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/15_0563fv.jpg",
+          "link": "/resource/bbc.0563f/",
+          "title": "McDowell, Rochester Post Express, baseball card portrait"
         },
         {
-          "alt": "Dorothea L. Dix sits for a photographic portrait with a medical bag at her feet.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-16.jpg",
-          "link": "/resource/ppmsca.59721/",
-          "title": "Dorothea L. Dix, Superintendent of Army Nurses for the Union Army with a medical bag on the floor. Photo, 1865"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/16_2095fv.jpg",
+          "link": "/resource/bbc.2095f/",
+          "title": "Hardie Henderson, Brooklyn Trolley-Dodgers, baseball card portrait"
         },
         {
-          "alt": "Women in nursing attire tend to a man lying on a medical table.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-17.jpg",
-          "link": "/resource/ppmsca.08016/",
-          "title": "Japanese nurses attending to a patient in an operating room. Photo by Underwood & Underwood, 1905"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/17_0566fv.jpg",
+          "link": "/resource/bbc.0566f/",
+          "title": "Jimmy Ryan, Chicago White Stockings, baseball card portrait"
         },
         {
-          "alt": "A woman stands for a photographic portrait wearing a U.S. Army nurse uniform.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-18.jpg",
-          "link": "/resource/ds.05460/",
-          "title": "An Army nurse wears the Caduceus, the winged staff and serpent of the Medical Corps, with the \"U.S.\" on her outdoor uniform. Photo by Joel Feder, 1914\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/18_0599fv.jpg",
+          "link": "/resource/bbc.0599f/",
+          "title": "Nagle, Los Angeles Team, baseball card portrait"
         },
         {
-          "alt": "A dog and a cat dressed in clothing are posed in an embrace.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-19.jpg",
-          "link": "/resource/ds.04041/",
-          "title": "The nurse. Photo by Harry Frees, 1914"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/19_0638fv.jpg",
+          "link": "/resource/bbc.0638f/",
+          "title": "Roger Bresnahan, St. Louis Cardinals, baseball card portrait"
         },
         {
-          "alt": "Women in nursing attire sit in a semicircle drinking tea.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-20.jpg",
-          "link": "/resource/ggbain.27157/",
-          "title": "Nurses at tea. Photo by Bain News Service, 1915-1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/20_0976fv.jpg",
+          "link": "/resource/bbc.0976f/",
+          "title": "Kid Elberfeld, New York Highlanders, baseball card portrait"
         },
         {
-          "alt": "Front cover of a handbook for student nurses.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-21.jpg",
-          "link": "/resource/gdcmassbookdig.handbookforschoo00kell/?sp=7",
-          "title": "A handbook for school nurses. Book by Helen Kelly, 1918"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/21_0668fv.jpg",
+          "link": "/resource/bbc.0668f/",
+          "title": "Art Devlin, New York Giants, baseball card portrait"
         },
         {
-          "alt": "Girls wearing nursing attire pretend to work in a hospital nursery.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-22.jpg",
-          "link": "/resource/anrc.15120/",
-          "title": "Junior Red Cross. Red Cross Collection photo, 1919-1929"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/22_1190fv.jpg",
+          "link": "/resource/bbc.1190f/",
+          "title": "Hoffman, Raleigh Team, baseball card portrait"
         },
         {
-          "alt": "A nurse teaches medical techniques to young girls in nursing attire.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-23.jpg",
-          "link": "/resource/anrc.14914/",
-          "title": "Little sisters class, Podgoritza Orphanage, Montenegro, where Miss Robinson is the director. Miss Jeannie Frasier, A.R.C. nurse is shown instructing. Red Cross Collection photo, 1919-1929"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/23_2090fv.jpg",
+          "link": "/resource/bbc.2090f/",
+          "title": "Eddie Collins, Philadelphia Athletics, baseball card portrait"
         },
         {
-          "alt": "A group of nurses in matching cloaks exits through a large gate.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-24.jpg",
-          "link": "/resource/anrc.07190/",
-          "title": "The Queen and territorial nurses. Nurses leaving the palace on foot and in cabs. Red Cross Collection photo, 1917-1919"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/24_2084fv.jpg",
+          "link": "/resource/bbc.2084f/",
+          "title": "Slim Sallee, St. Louis Cardinals, baseball card portrait"
         },
         {
-          "alt": "A woman poses for a photographic portrait in nursing attire emblazoned with cross symbols.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-25.jpg",
-          "link": "/resource/ppmsca.41133/",
-          "title": "Red Cross nurse. Photo by Adolf de Meyer, around 1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/25_2070fv.jpg",
+          "link": "/resource/bbc.2070f/",
+          "title": "Chicago Cubs, baseball card portrait"
         },
         {
-          "alt": "Medical instruments, sterile cloths, and a pair of opaque eyeglasses cover a tray.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-26.jpg",
-          "link": "/resource/anrc.05856/",
-          "title": "Eye Tray. Army Training School for Nurses. Walter Reed Hospital. Red Cross Collection photo, 1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/26_2018fv.jpg",
+          "link": "/resource/bbc.2018f/",
+          "title": "Richard Marquard/John T. Meyers, New York Giants, baseball card portrait"
         },
         {
-          "alt": "A ribbon embellished with a cross symbol supports a medal embossed with an image of Florence Nightingale.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-27.jpg",
-          "link": "/resource/anrc.11952/",
-          "title": "Florence Nightingale medal. Red Cross Collection photo, 1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/27_1778fv.jpg",
+          "link": "/resource/bbc.1778f/",
+          "title": "Rafael Almeida, Cincinnati Reds, baseball card portrait"
         },
         {
-          "alt": "Illustration of a woman in nursing attire as seen from the front and back.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-28.jpg",
-          "link": "/resource/musihas.200220000.0?st=gallery",
-          "title": "We Live and Laugh: The Nurse. Grey dress, white apron, black heels, and white nurse's cap. Costume design drawing by Emile Stoner, 1935-1939  (Music Division, Federal Theatre Project)\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/28_1628fv.jpg",
+          "link": "/resource/bbc.1628f/",
+          "title": "Zacher, Oakland Team, baseball card portrait"
         },
         {
-          "alt": "A man pins a medal on a woman while another woman in nursing attire looks on.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-29.jpg",
-          "link": "/resource/hec.28981/",
-          "title": "U.S. Nurse wins international award. Miss Butler is the fifteenth American nurse to receive the Florence Nightingale award. Photo by Harris & Ewing, 1937-1939\n"
-        },
-        {
-          "alt": "Memorial statue of a woman wearing nursing attire.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-30.jpg",
-          "link": "/resource/hec.25343/",
-          "title": "Army and Navy Nurses Memorial. Photo by Harris & Ewing, around 1938"
-        },
-        {
-          "alt": "A man and a woman in medical garb perform a procedure on a patient\u2019s eyes.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-31.jpg",
-          "link": "/resource/matpc.19849/",
-          "title": "The Dept. of Health, Mobile Ophthalmic Clinic. Operating in Arab villages of the South Country, N.E. of Gaza. Closer view of nurses tending to the eyes to prevent or heal the dreaded disease. Photo by American Colony, 1939"
-        },
-        {
-          "alt": "Poster of two women posing in matching nursing attire emblazoned with cross symbols.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-32.jpg",
-          "link": "/resource/cph.3g01659/",
-          "title": "Uncle Sam Needs Nurses. World War II poster, 1941-1945"
-        },
-        {
-          "alt": "Illustration of cross symbols transforming everyday women into nurses.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-33.jpg",
-          "link": "/resource/ds.07246/",
-          "title": "Train to be a nurse's aide Phone your boro Civilian Defense Volunteer Office. Poster by Federal Art Project, 1941-1943\n"
-        },
-        {
-          "alt": "A group of women sits at student desks wearing matching uniforms.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-34.jpg",
-          "link": "/resource/fsa.8d02799/",
-          "title": "Chicago, Illinois. Provident Hospital. A preliminary student nurses' class in bacteriology. Photo by Jack Delano, 1942"
-        },
-        {
-          "alt": "A woman in nursing attire watches as another fills a hypodermic needle.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-35.jpg",
-          "link": "/resource/fsa.8b07713/",
-          "title": "Nurse training. A graduate nurse (right) watches student Susan Petty prepare a hypodermic for a patient. Photo by Fritz Henle, 1942"
-        },
-        {
-          "alt": "A woman in nursing attire weighs a baby on a scale.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-36.jpg",
-          "link": "/resource/fsa.8d31913/",
-          "title": "Johns Hopkins Hospital, Baltimore, Maryland. Student nurse at work in the pediatrics ward. Photo by Ann Rosener, 1943"
-        },
-        {
-          "alt": "An aproned woman tends to small children in metal cribs.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-37.jpg",
-          "link": "/resource/ppprs.00426/",
-          "title": "Orphanage (with nurse), Manzanar War Relocation Center. Photo by Ansel Adams,1943"
-        },
-        {
-          "alt": "A woman gets into the driver's seat of a station wagon.\n",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-38.jpg",
-          "link": "/resource/fsa.8d12411/",
-          "title": "Penasco, New Mexico. Nurse Marjorie Muller, of the clinic operated by the Taos County cooperative health association, starting out on a call. Photo by John Collier, 1943"
-        },
-        {
-          "alt": "Women in nursing attire pose in a room with a dresser and beds.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-39.jpg",
-          "link": "/resource/matpc.00542/",
-          "title": "Hebron hospital, nurse's bedroom. Photo by Matson Photo Service, 1944"
-        },
-        {
-          "alt": "A group of women in nurse uniforms stands together for a photographic portrait.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-40.jpg",
-          "link": "/resource/cph.3c19985/",
-          "title": "First group of African American nurses to arrive in England during World War II. Photo by U.S. Signal Corps, 1944."
-        },
-        {
-          "alt": "People in white coats ride on a parade float with realistic animal figures.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-41.jpg",
-          "link": "/resource/highsm.24486/",
-          "title": "The Nurses' Float, decorated by registered nurses from across the United States, in the 124th Rose Parade in Pasadena, California. Photo by Carol Highsmith, 2013\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/29_1227fv.jpg",
+          "link": "/resource/bbc.1227f/",
+          "title": "Seaton, Seattle Team, baseball card portrait"
         }
       ],
       "layout": "unaligned"
     },
-    "slug": "nurses-and-nursing",
-    "status": "production",
-    "title": "Free to Use and Reuse: Nurses and Nursing",
-    "url": "https://www.loc.gov/free-to-use/nurses-and-nursing/"
+    "slug": "baseball-cards",
+    "title": "Free to Use and Reuse: Baseball Cards",
+    "url": "https://www.loc.gov/free-to-use/baseball-cards/"
   },
   "previous_sibling": {
     "active": false,
     "content": "theme.html",
     "description": [
-      "<p>Women and men have long provided nursing services by caring for the sick and wounded at home and during wars and international relief efforts. The pictures in this set focus on the mid-1800s to mid-1900s, including portraits of such famous figures as Florence Nightingale and Clara Barton as well as women like Susie King Taylor who are gaining recognition for their courageous stories. The emphasis on nurses during the Civil War and in the American Red Cross represents significant nursing concentrations at the Library of Congress. Unless otherwise noted, the selected images are from the Prints & Photographs Division.</p>\n<p>Browse more\u00a0<a href=\"/free-to-use/\">content that is free to use and reuse</a>.</p>\n"
+      "<p>This set features baseball cards from the <a href='/collections/baseball-cards/about-this-collection/'>Benjamin\nK. Edwards Collection</a> which includes 2,100 early baseball cards dating\nfrom 1887 to 1914.</p>\n<p>Browse <a href='/free-to-use/'>more content that is\nfree to use and reuse</a>.</p>\n"
     ],
     "disable_navigation": true,
     "image_url": [
-      "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-1.jpg"
+      "/static/portals/free-to-use/public-domain/baseball-cards/2_1407fv.jpg"
     ],
-    "link": "https://www.loc.gov/free-to-use/nurses-and-nursing/",
+    "link": "https://www.loc.gov/free-to-use/baseball-cards/",
     "markup": "{% load filters %}\n<section class='public-domain-abstract'>\n    <p>{{content.abstract|safe}}</p>\n</section>\n<style>\n    .public-domain-set > li {\n        padding-bottom: 10px;\n    }\n</style>\n<section class=\"public-domain\"><a id=\"reuse\" name=\"reuse\"></a>\n    <ul class='search-results grid-view public-domain-results public-domain-set'>\n        {% for item in content.set.items %}\n            <li>\n                <figure>\n                    <a href=\"{{item.link}}\">\n                        <img alt=\"{% if item.alt %}{{item.alt}}{% endif %}\"\n                            data-src=\"{{item.image}}\"\n                            src=\"{{item.image}}\">\n                        <figcaption>{{item.title|safe}}</figcaption>\n                    </a>\n                </figure>\n            </li>\n        {% endfor %}\n    </ul>\n</section>\n\n<script>\n    $(document).ready(function() {\n        // public domain\n        var $grid = $('.public-domain .grid-view').isotope({\n            {% if content.set.layout == \"aligned\" %}\n            // For items that needs to be ordered\n            layoutMode: 'fitRows',\n            {% endif %}\n            itemSelector: '.public-domain .grid-view > li',\n            percentPosition: true\n        });\n\n        $grid.imagesLoaded().progress( function() {\n            $grid.isotope('layout');\n        });\n\n        // UX Interactions - Programs, Top Searches, Trending, Your Library, Exhibitions, Events, News, Public Domain\n        if (window['loc_ux_tracking'] != undefined){\n            $('.public-domain-results.search-results li figure a').click(function() {\n                var listItem = $(this).closest('li');\n                var index = $(listItem).parent().children().index(listItem) + 1;\n                var label = '[' + index + ']:' + $(this).closest('.public-domain-results li').contents().text().trim();\n                loc_ux_tracking.trackUserInteractionEvent($(this), 'Public Domain', 'Click', label);\n            });\n\n        }\n\n    });\n</script>\n",
-    "meta_description": "Women and men have long provided nursing services by caring for the sick and wounded at home and during wars and international relief efforts. The pictures in this set focus on the mid-1800s to mid-1900s, including portraits of such famous figures as Florence Nightingale and Clara Barton as well as women like Susie King Taylor who are gaining recognition for their courageous stories. The emphasis on nurses during the Civil War and in the American Red Cross represents significant nursing concentrations at the Library of Congress. Unless otherwise noted, the selected images are from the Prints & Photographs Division.",
-    "pagination": "21 of 94",
+    "meta_description": "This set features baseball cards from the Benjamin K. Edwards Collection which includes 2,100 early baseball cards dating from 1887 to 1914.",
+    "pagination": "73 of 94",
     "set": {
       "items": [
         {
-          "alt": "Florence Nightingale poses for a photographic portrait.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-1.jpg",
-          "link": "/resource/ppmsca.57163/",
-          "title": "Florence Nightingale (1820-1910) is known as \"the founder of modern nursing.\" Photo by H. Lenthal, around 1856\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/1_0006fv.jpg",
+          "link": "/resource/bbc.0006f/",
+          "title": "John M. Ward, New York Giants, baseball card portrait"
         },
         {
-          "alt": "An aproned woman wraps medical supplies into a cloth bundle.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-2.jpg",
-          "link": "/resource/fsa.8c29209/",
-          "title": "Midwife wrapping her kit to go on a call in Greene County, Georgia. Photo by Jack Delano, 1941"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/2_1407fv.jpg",
+          "link": "/resource/bbc.1407f/",
+          "title": "Christopher Mathewson, New York Giants, baseball card portrait"
         },
         {
-          "alt": "Women in white gowns look after children on a beach.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-3.jpg",
-          "link": "/resource/anrc.01981/",
-          "title": "American Red Cross in Italy. Scores of these little ones are taken in the water daily on the doctor's prescription watched carefully by their nurses. Red Cross Collection photo, 1919\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/3_1407bv.jpg",
+          "link": "/resource/bbc.1407b/",
+          "title": "Christopher Mathewson, New York Giants (back of card)"
         },
         {
-          "alt": "Illustration of a woman with a cross armband riding a horse.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-4.jpg",
-          "link": "/resource/cph.3g07760/",
-          "title": "The Public Health Nurse She answers humanity's call : Your Red Cross membership makes her work possible. Poster by Gordon Grant, 1914-1918\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/4_1993fv.jpg",
+          "link": "/resource/bbc.1993f/",
+          "title": "Clyde Milan/N. Elberfeld, Washington Nationals, baseball card portrait"
         },
         {
-          "alt": "Susie King Taylor stands for a photographic portrait in a U.S. Army nurse uniform.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-5.jpg",
-          "link": "/resource/ppmsca.57593/",
-          "title": "Susie King Taylor (1848-1912), known as the first African American Army nurse"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/5_0068fv.jpg",
+          "link": "/resource/bbc.0068f/",
+          "title": "Ezra Sutton, Boston Beaneaters, baseball card portrait"
         },
         {
-          "alt": "Clara Barton sits for a photographic portrait by a small table and holds an open book.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-6.jpg",
-          "link": "/resource/ppmsca.56384/",
-          "title": "Clara Barton (1812-1921), known for her roles in nursing during the Civil War and in founding the American Red Cross. Photo by Claflin, March 1865"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/6_1558fv.jpg",
+          "link": "/resource/bbc.1558f/",
+          "title": "Zack D. Wheat/William Bergen, Brooklyn Dodgers, baseball card portrait"
         },
         {
-          "alt": "A woman in a nurse uniform tends to a man lying in a bed.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-7.jpg",
-          "link": "/resource/gtfy.07114/",
-          "title": "St. Rose's nuns and nurses with patient. Photo by Bernard Gotfryd, 1984\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/7_0015fv.jpg",
+          "link": "/resource/bbc.0015f/",
+          "title": "Ned Williamson, Chicago White Stockings, baseball card portrait"
         },
         {
-          "alt": "A woman in a nurse uniform wearing a cross symbol armband wraps a dog\u2019s paw with a bandage.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-8.jpg",
-          "link": "/resource/anrc.11105/",
-          "title": "Dogs of War. Red Cross nurse bandaging up a wounded foot of collie. Photo by Underwood & Underwood, 1917"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/8_0072fv.jpg",
+          "link": "/resource/bbc.0072f/",
+          "title": "Harry Lyons and Billy Taylor, Philadelphia Quakers, baseball card portrait"
         },
         {
-          "alt": "Marie Brose Tepe stands for a photographic portrait wearing a uniform embellished with a cross medal.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-9.jpg",
-          "link": "/resource/ppmsca.75531/",
-          "title": "Marie Brose Tepe (1834-1901), Civil War nurse and vivandi\u00e8re in zouave uniform with Kearny Cross medal, barrel canteen, and revolver. Photo by R.W. Addis, 1862-1864"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/9_0188fv.jpg",
+          "link": "/resource/bbc.0188f/",
+          "title": "Ned Hanlon, Detroit Wolverines, baseball card portrait"
         },
         {
-          "alt": "O.W. Waite poses for a photographic portrait wearing a Civil War Union uniform.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-10.jpg",
-          "link": "/resource/ppmsca.69296/",
-          "title": "O.W. Waite, male Civil War nurse at smallpox hospital, in uniform. Photo, 1861-1865"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/10_0552fv.jpg",
+          "link": "/resource/bbc.0552f/",
+          "title": "Charlie Getzien, Detroit Wolverines, baseball card portrait"
         },
         {
-          "alt": "A woman wearing medical scrubs handles surgical instruments in an operating room.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-11.jpg",
-          "link": "/resource/fsa.8a10619/",
-          "title": "Surgical nurse, Herrin Hospital (private), Herrin, Illinois. Photo by Arthur Rothstein, 1939"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/11_2091fv.jpg",
+          "link": "/resource/bbc.2091f/",
+          "title": "Jas. H. Fogarty, Philadelphia Quakers, baseball card portrait"
         },
         {
-          "alt": "A throng of women in nurse uniforms moves along an avenue.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-12.jpg",
-          "link": "/resource/anrc.08094/",
-          "title": "Nurses parade, Chicago. Red Cross Collection photo, 1918"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/13_0555fva.jpg",
+          "link": "/resource/bbc.0555f/",
+          "title": "Cap Anson, Chicago White Stockings, baseball card portrait"
         },
         {
-          "alt": "Illustration of Uncle Sam standing near a woman in nursing attire reading to a man lying in a bed.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-13.jpg",
-          "link": "/resource/ihas.200198982.0/?sp=1",
-          "title": "Remember the Nurse. Sheet music cover, 1918"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/12_0555bva.jpg",
+          "link": "/resource/bbc.0555b/",
+          "title": "Cap Anson, Chicago White Stockings (back of card)"
         },
         {
-          "alt": "Uniformed men lay flowers on graves marked with crosses.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-14.jpg",
-          "link": "/resource/anrc.09598/",
-          "title": "Group of American Red Cross men, Lts. Kelly, Dubois, Fraser and Vance, placing a wreath on Miss Edith Cavell's grave immediately after the departure of the Germans from Brussels. Red Cross Collection photo, around 1918\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/14_0562fv.jpg",
+          "link": "/resource/bbc.0562f/",
+          "title": "Lawton, Haverly Team, baseball card portrait"
         },
         {
-          "alt": "A woman hands a medicine cup to a man across a table.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-15.jpg",
-          "link": "/resource/ds.02776/",
-          "title": "A nurse hands a cup of methadone to a man in a medical clinic at 456 C St., N.W., Washington, D.C. Photo by Warren Leffler, 1971"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/15_0563fv.jpg",
+          "link": "/resource/bbc.0563f/",
+          "title": "McDowell, Rochester Post Express, baseball card portrait"
         },
         {
-          "alt": "Dorothea L. Dix sits for a photographic portrait with a medical bag at her feet.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-16.jpg",
-          "link": "/resource/ppmsca.59721/",
-          "title": "Dorothea L. Dix, Superintendent of Army Nurses for the Union Army with a medical bag on the floor. Photo, 1865"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/16_2095fv.jpg",
+          "link": "/resource/bbc.2095f/",
+          "title": "Hardie Henderson, Brooklyn Trolley-Dodgers, baseball card portrait"
         },
         {
-          "alt": "Women in nursing attire tend to a man lying on a medical table.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-17.jpg",
-          "link": "/resource/ppmsca.08016/",
-          "title": "Japanese nurses attending to a patient in an operating room. Photo by Underwood & Underwood, 1905"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/17_0566fv.jpg",
+          "link": "/resource/bbc.0566f/",
+          "title": "Jimmy Ryan, Chicago White Stockings, baseball card portrait"
         },
         {
-          "alt": "A woman stands for a photographic portrait wearing a U.S. Army nurse uniform.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-18.jpg",
-          "link": "/resource/ds.05460/",
-          "title": "An Army nurse wears the Caduceus, the winged staff and serpent of the Medical Corps, with the \"U.S.\" on her outdoor uniform. Photo by Joel Feder, 1914\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/18_0599fv.jpg",
+          "link": "/resource/bbc.0599f/",
+          "title": "Nagle, Los Angeles Team, baseball card portrait"
         },
         {
-          "alt": "A dog and a cat dressed in clothing are posed in an embrace.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-19.jpg",
-          "link": "/resource/ds.04041/",
-          "title": "The nurse. Photo by Harry Frees, 1914"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/19_0638fv.jpg",
+          "link": "/resource/bbc.0638f/",
+          "title": "Roger Bresnahan, St. Louis Cardinals, baseball card portrait"
         },
         {
-          "alt": "Women in nursing attire sit in a semicircle drinking tea.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-20.jpg",
-          "link": "/resource/ggbain.27157/",
-          "title": "Nurses at tea. Photo by Bain News Service, 1915-1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/20_0976fv.jpg",
+          "link": "/resource/bbc.0976f/",
+          "title": "Kid Elberfeld, New York Highlanders, baseball card portrait"
         },
         {
-          "alt": "Front cover of a handbook for student nurses.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-21.jpg",
-          "link": "/resource/gdcmassbookdig.handbookforschoo00kell/?sp=7",
-          "title": "A handbook for school nurses. Book by Helen Kelly, 1918"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/21_0668fv.jpg",
+          "link": "/resource/bbc.0668f/",
+          "title": "Art Devlin, New York Giants, baseball card portrait"
         },
         {
-          "alt": "Girls wearing nursing attire pretend to work in a hospital nursery.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-22.jpg",
-          "link": "/resource/anrc.15120/",
-          "title": "Junior Red Cross. Red Cross Collection photo, 1919-1929"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/22_1190fv.jpg",
+          "link": "/resource/bbc.1190f/",
+          "title": "Hoffman, Raleigh Team, baseball card portrait"
         },
         {
-          "alt": "A nurse teaches medical techniques to young girls in nursing attire.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-23.jpg",
-          "link": "/resource/anrc.14914/",
-          "title": "Little sisters class, Podgoritza Orphanage, Montenegro, where Miss Robinson is the director. Miss Jeannie Frasier, A.R.C. nurse is shown instructing. Red Cross Collection photo, 1919-1929"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/23_2090fv.jpg",
+          "link": "/resource/bbc.2090f/",
+          "title": "Eddie Collins, Philadelphia Athletics, baseball card portrait"
         },
         {
-          "alt": "A group of nurses in matching cloaks exits through a large gate.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-24.jpg",
-          "link": "/resource/anrc.07190/",
-          "title": "The Queen and territorial nurses. Nurses leaving the palace on foot and in cabs. Red Cross Collection photo, 1917-1919"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/24_2084fv.jpg",
+          "link": "/resource/bbc.2084f/",
+          "title": "Slim Sallee, St. Louis Cardinals, baseball card portrait"
         },
         {
-          "alt": "A woman poses for a photographic portrait in nursing attire emblazoned with cross symbols.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-25.jpg",
-          "link": "/resource/ppmsca.41133/",
-          "title": "Red Cross nurse. Photo by Adolf de Meyer, around 1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/25_2070fv.jpg",
+          "link": "/resource/bbc.2070f/",
+          "title": "Chicago Cubs, baseball card portrait"
         },
         {
-          "alt": "Medical instruments, sterile cloths, and a pair of opaque eyeglasses cover a tray.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-26.jpg",
-          "link": "/resource/anrc.05856/",
-          "title": "Eye Tray. Army Training School for Nurses. Walter Reed Hospital. Red Cross Collection photo, 1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/26_2018fv.jpg",
+          "link": "/resource/bbc.2018f/",
+          "title": "Richard Marquard/John T. Meyers, New York Giants, baseball card portrait"
         },
         {
-          "alt": "A ribbon embellished with a cross symbol supports a medal embossed with an image of Florence Nightingale.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-27.jpg",
-          "link": "/resource/anrc.11952/",
-          "title": "Florence Nightingale medal. Red Cross Collection photo, 1920"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/27_1778fv.jpg",
+          "link": "/resource/bbc.1778f/",
+          "title": "Rafael Almeida, Cincinnati Reds, baseball card portrait"
         },
         {
-          "alt": "Illustration of a woman in nursing attire as seen from the front and back.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-28.jpg",
-          "link": "/resource/musihas.200220000.0?st=gallery",
-          "title": "We Live and Laugh: The Nurse. Grey dress, white apron, black heels, and white nurse's cap. Costume design drawing by Emile Stoner, 1935-1939  (Music Division, Federal Theatre Project)\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/28_1628fv.jpg",
+          "link": "/resource/bbc.1628f/",
+          "title": "Zacher, Oakland Team, baseball card portrait"
         },
         {
-          "alt": "A man pins a medal on a woman while another woman in nursing attire looks on.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-29.jpg",
-          "link": "/resource/hec.28981/",
-          "title": "U.S. Nurse wins international award. Miss Butler is the fifteenth American nurse to receive the Florence Nightingale award. Photo by Harris & Ewing, 1937-1939\n"
-        },
-        {
-          "alt": "Memorial statue of a woman wearing nursing attire.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-30.jpg",
-          "link": "/resource/hec.25343/",
-          "title": "Army and Navy Nurses Memorial. Photo by Harris & Ewing, around 1938"
-        },
-        {
-          "alt": "A man and a woman in medical garb perform a procedure on a patient\u2019s eyes.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-31.jpg",
-          "link": "/resource/matpc.19849/",
-          "title": "The Dept. of Health, Mobile Ophthalmic Clinic. Operating in Arab villages of the South Country, N.E. of Gaza. Closer view of nurses tending to the eyes to prevent or heal the dreaded disease. Photo by American Colony, 1939"
-        },
-        {
-          "alt": "Poster of two women posing in matching nursing attire emblazoned with cross symbols.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-32.jpg",
-          "link": "/resource/cph.3g01659/",
-          "title": "Uncle Sam Needs Nurses. World War II poster, 1941-1945"
-        },
-        {
-          "alt": "Illustration of cross symbols transforming everyday women into nurses.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-33.jpg",
-          "link": "/resource/ds.07246/",
-          "title": "Train to be a nurse's aide Phone your boro Civilian Defense Volunteer Office. Poster by Federal Art Project, 1941-1943\n"
-        },
-        {
-          "alt": "A group of women sits at student desks wearing matching uniforms.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-34.jpg",
-          "link": "/resource/fsa.8d02799/",
-          "title": "Chicago, Illinois. Provident Hospital. A preliminary student nurses' class in bacteriology. Photo by Jack Delano, 1942"
-        },
-        {
-          "alt": "A woman in nursing attire watches as another fills a hypodermic needle.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-35.jpg",
-          "link": "/resource/fsa.8b07713/",
-          "title": "Nurse training. A graduate nurse (right) watches student Susan Petty prepare a hypodermic for a patient. Photo by Fritz Henle, 1942"
-        },
-        {
-          "alt": "A woman in nursing attire weighs a baby on a scale.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-36.jpg",
-          "link": "/resource/fsa.8d31913/",
-          "title": "Johns Hopkins Hospital, Baltimore, Maryland. Student nurse at work in the pediatrics ward. Photo by Ann Rosener, 1943"
-        },
-        {
-          "alt": "An aproned woman tends to small children in metal cribs.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-37.jpg",
-          "link": "/resource/ppprs.00426/",
-          "title": "Orphanage (with nurse), Manzanar War Relocation Center. Photo by Ansel Adams,1943"
-        },
-        {
-          "alt": "A woman gets into the driver's seat of a station wagon.\n",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-38.jpg",
-          "link": "/resource/fsa.8d12411/",
-          "title": "Penasco, New Mexico. Nurse Marjorie Muller, of the clinic operated by the Taos County cooperative health association, starting out on a call. Photo by John Collier, 1943"
-        },
-        {
-          "alt": "Women in nursing attire pose in a room with a dresser and beds.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-39.jpg",
-          "link": "/resource/matpc.00542/",
-          "title": "Hebron hospital, nurse's bedroom. Photo by Matson Photo Service, 1944"
-        },
-        {
-          "alt": "A group of women in nurse uniforms stands together for a photographic portrait.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-40.jpg",
-          "link": "/resource/cph.3c19985/",
-          "title": "First group of African American nurses to arrive in England during World War II. Photo by U.S. Signal Corps, 1944."
-        },
-        {
-          "alt": "People in white coats ride on a parade float with realistic animal figures.",
-          "image": "/static/portals/free-to-use/public-domain/nurses-and-nursing/Nursing-41.jpg",
-          "link": "/resource/highsm.24486/",
-          "title": "The Nurses' Float, decorated by registered nurses from across the United States, in the 124th Rose Parade in Pasadena, California. Photo by Carol Highsmith, 2013\n"
+          "image": "/static/portals/free-to-use/public-domain/baseball-cards/29_1227fv.jpg",
+          "link": "/resource/bbc.1227f/",
+          "title": "Seaton, Seattle Team, baseball card portrait"
         }
       ],
       "layout": "unaligned"
     },
-    "slug": "nurses-and-nursing",
-    "status": "production",
-    "title": "Free to Use and Reuse: Nurses and Nursing",
-    "url": "https://www.loc.gov/free-to-use/nurses-and-nursing/"
+    "slug": "baseball-cards",
+    "title": "Free to Use and Reuse: Baseball Cards",
+    "url": "https://www.loc.gov/free-to-use/baseball-cards/"
   },
   "site_type": "free-to-use",
-  "timestamp": 1732403517104,
+  "timestamp": 1732548449623,
   "title": "Library of Congress Free to Use and Reuse",
   "type": "orientation-portal"
 }
