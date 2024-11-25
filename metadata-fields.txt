@@ -1,0 +1,50 @@
+attribute	value
+_version_	1798732638728486912
+access_restricted	False
+aka	['https://hdl.loc.gov/loc.music/musihas.200215965', 'http://www.loc.gov/resource/music.musihas-200215965/', 'http://www.loc.gov/item/musihas.200215965/']
+call_number	['series: Production Records, 1934-1943: Posters File, undated']
+campaigns	[]
+contributor_names	['Federal Theatre Project (U.S.)']
+contributors	[{'federal theatre project (u.s.)': 'https://www.loc.gov/search/?fa=contributor:federal+theatre+project+%28u.s.%29&fo=json'}]
+date	1934
+dates	[{'1934 to 1943': 'https://www.loc.gov/search/?dates=1934/1943&fo=json'}]
+digital_id	['https://hdl.loc.gov/loc.music/musihas.200215965']
+digitized	True
+display_offsite	True
+extract_timestamp	2024-05-11T05:07:20.230Z
+extract_urls	['https://repo.loc.gov/access/public/music/musihas-200215965/.resource.json#paprika-music']
+format	[{'book': 'https://www.loc.gov/search/?fa=original_format:book&fo=json'}]
+genre	['Posters']
+group	['paprika-music']
+hassegments	False
+id	http://www.loc.gov/item/musihas.200215965/
+image_url	['https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:6.25/0/default.jpg', 'https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:6.25/0/default.jpg#h=579&w=369', 'https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:12.5/0/default.jpg#h=1159&w=739', 'https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:25.0/0/default.jpg#h=2318&w=1479', 'https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:50.0/0/default.jpg#h=4636&w=2958', 'https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:100.0/0/default.jpg#h=9273&w=5916']
+index	1
+item	{'call_number': ['series: Production Records, 1934-1943: Posters File, undated'], 'contributors': ['Federal Theatre Project (U.S.)'], 'date': '1934/1943', 'digital_id': ['https://hdl.loc.gov/loc.music/musihas.200215965'], 'format': 'text', 'genre': ['Posters'], 'language': ['eng'], 'medium': ['1 poster: 14x22in'], 'notes': ['From Federal Theatre Project Collection (Production Records, 1934-1943/Posters File). Collection of approximately 1,000 posters of varying sizes of poster board done by the silk screen, offset lithography, and letterpress processes, as well as by hand. Produced by the Federal Art Project poster division and by artists employed directly by the FTP, the posters advertise over 500 productions in 91 cities in 24 states and the District of Columbia.', 'Text on Poster: Federal Theatre "Dragon\'s Wishbone" Childrens\' Play by Joan & Michael Slane Children 10c Adults 20c Federal Theatre Rainier & Atlantic Sat. Matinee 2.00 P.M. May 13-20-27'], 'related_items': [{'title': 'View Federal Theatre Project Collection Finding Aid', 'url': 'https://hdl.loc.gov/loc.music/eadmus.mu995001'}], 'repository': 'music division', 'rights': 'No known restrictions on use or reproduction.', 'source_collection': 'Federal Theatre Project, 1935 to 1939', 'subjects': ['Theater--United States.', 'Posters'], 'title': "Dragon's Wishbone"}
+language	['english']
+languages	[{'english': 'https://www.loc.gov/search/?fa=language:english&fo=json'}]
+medium	['1 poster: 14x22in']
+mime_type	['image/jpeg', 'image/jp2']
+notes	['From Federal Theatre Project Collection (Production Records, 1934-1943/Posters File). Collection of approximately 1,000 posters of varying sizes of poster board done by the silk screen, offset lithography, and letterpress processes, as well as by hand. Produced by the Federal Art Project poster division and by artists employed directly by the FTP, the posters advertise over 500 productions in 91 cities in 24 states and the District of Columbia.', 'Text on Poster: Federal Theatre "Dragon\'s Wishbone" Childrens\' Play by Joan & Michael Slane Children 10c Adults 20c Federal Theatre Rainier & Atlantic Sat. Matinee 2.00 P.M. May 13-20-27']
+number	['http://www.loc.gov/resource/ihas.200215965.0', 'http://www.loc.gov/resource/musihas.200215965.0']
+number_former_id	['http://www.loc.gov/resource/musihas.200215965.0', 'http://www.loc.gov/resource/ihas.200215965.0']
+online_format	['image']
+original_format	['book']
+other_formats	[]
+partof	[{'count': 1360, 'title': 'federal theatre project, 1935 to 1939: production records, 1934-1943: posters file, undated', 'url': 'https://www.loc.gov/search/?fa=partof:federal+theatre+project,+1935+to+1939:+production+records,+1934-1943:+posters+file,+undated&fo=json'}, {'count': 9217, 'title': 'federal theatre project, 1935 to 1939', 'url': 'https://www.loc.gov/collections/federal-theatre-project-1935-to-1939/?fo=json'}, {'count': 152980, 'title': 'music division', 'url': 'https://www.loc.gov/search/?fa=partof:music+division&fo=json'}]
+related_items	[{'title': 'View Federal Theatre Project Collection Finding Aid', 'url': 'https://hdl.loc.gov/loc.music/eadmus.mu995001'}]
+repository	['music division']
+resources	[{'files': 1, 'image': 'https://tile.loc.gov/image-services/iiif/public:music:musihas-200215965:musihas-200215965.0001/full/pct:6.25/0/default.jpg', 'paprika_resource_path': '/sets/music/musihas-200215965', 'url': 'https://www.loc.gov/resource/music.musihas-200215965/'}]
+rights	['<h2>Restriction and Notice Statement</h2>\r\n<p>The Library of Congress is not aware of any copyright in the materials in the Federal Theatre Project collection. Generally speaking, works created by U.S. Government employees, including for the Federal Theatre Project, are not eligible for copyright protection in the United States. The Library of Congress has no objection to their international use. Accordingly, such works are free to use and reuse.</p>\r\n<p>However, the Library of Congress has not specifically analyzed whether every item in the Federal Theatre Project Collection is a U.S. government work. Rights assessment is your responsibility. </p>\r\n<p>Privacy and publicity rights may apply. In particular, the Library of Congress is grateful to the family of Orson Welles for their cooperation in the presentation of materials in this collection. For permission to use images of Orson Welles in any commercial manner, please contact:</p>\r\n<p> Beatrice Welles <br>\r\n  c/o Thomas A. White <br>\r\n  8671 Wilshire Boulevard, Suite 718 <br>\r\n  Beverly Hills, CA 90211-2915 <br>\r\n  ph. 310-657-9831 <br>\r\n  fax. 310-657-6455</p>\r\n<p>Credit Line: Library of Congress, Music Division, Federal Theatre Project Collection.</p>\r\n<p>More about <a href="/legal/">Copyright and other Restrictions</a></p>\r\n<p>For guidance about compiling full citations consult <a href="//www.loc.gov/teachers/usingprimarysources/citing.html">Citing Primary Sources</a>.</p>\r\n']
+score	15.7984085
+shard	08
+shelf_id	series: Production Records, 1934-1943: Posters File, undated
+source_collection	Federal Theatre Project, 1935 to 1939
+source_modified	2000-01-01T12:00:00Z
+subject	['theater', 'posters', 'united states']
+subject_headings	['Theater--United States', 'Posters']
+subjects	[{'posters': 'https://www.loc.gov/search/?fa=subject:posters&fo=json'}, {'theater': 'https://www.loc.gov/search/?fa=subject:theater&fo=json'}, {'united states': 'https://www.loc.gov/search/?fa=subject:united+states&fo=json'}]
+timestamp	2024-05-11T05:25:19.572Z
+title	Dragon's Wishbone
+type	['book']
+url	https://www.loc.gov/item/musihas.200215965/
